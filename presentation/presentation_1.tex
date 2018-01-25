@@ -667,8 +667,8 @@ correspondent manifold, for the AAM on the right.}
 \begin{frame}[plain,noframenumbering]
     \frametitle{Chapter V: Gaussian process regression}
     \begin{figure}[ht!]
-        \subfloat[Training inputs X with
-        targetsy.]{\includegraphics[width=.32\textwidth]{/home/nd/cloud/thesis/figures/LE-figures/heatmapTrainPlot-ID17-Right_Ankle_PlantarFlexion_Angle.eps}}
+        \subfloat[Training inputs $\mathbf{X}$ with
+        targets $\mathbf{y}$.]{\includegraphics[width=.32\textwidth]{/home/nd/cloud/thesis/figures/LE-figures/heatmapTrainPlot-ID17-Right_Ankle_PlantarFlexion_Angle.eps}}
         \subfloat[Posterior predictive mean function as
         heatmap.]{\includegraphics[width=.32\textwidth]{/home/nd/cloud/thesis/figures/LE-figures/heatmapPlot-ID17-Right_Ankle_PlantarFlexion_Angle.eps}}\hfill
         \subfloat[Posterior predictive mean surface for tests
@@ -677,6 +677,90 @@ correspondent manifold, for the AAM on the right.}
     \end{figure}
 \end{frame}
 
+%------------------------------------------------
+
+\begin{frame}[plain,noframenumbering]
+    \frametitle{Chapter V: Stride-time regression}
+    \begin{figure}[ht!]
+        \subfloat[Comparative stride duration.]{\includegraphics[width=.4\textwidth]{/home/nd/cloud/thesis/figures/LE-figures/subject-10-violin-plot-duration.pdf}}
+        \subfloat[Curve fitted to Arnold et al. (2013) stride
+duration observations.]{\includegraphics[width=.4\textwidth]{/home/nd/cloud/thesis/figures/LE-figures/gait-cycle-time-comparisson-Arnold-2.pdf}}
+\caption{Regressing across stride durations; the shaded region in (b) shows our duration domain.}
+            \end{figure}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}[plain,noframenumbering]
+    \frametitle{Chapter V: Simulated results}
+    \begin{figure}[ht!]
+        \subfloat[$v=0.6$m/s.]{\includegraphics[width=.4\textwidth]{/home/nd/cloud/thesis/figures/LE-figures/v0.eps}}
+        \hspace{0.5cm}
+        \subfloat[$v=1.6$m/s.]{\includegraphics[width=.49\textwidth]{/home/nd/cloud/thesis/figures/LE-figures/vf.eps}}
+        \caption{Panels show gait cycle simulations for velocities outside the training data.}
+    \end{figure}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}[plain,noframenumbering]
+    \frametitle{Chapter V: Simulated results}
+    \begin{figure}[ht!]
+        \subfloat[Plantarflexion angle]{\includegraphics[width=.5\textwidth]{/home/nd/cloud/thesis/figures/LE-figures/subject-6-torque-v-angle.pdf}}
+        \subfloat[Knee angle (sagittal plane)]{\includegraphics[width=.5\textwidth]{/home/nd/cloud/thesis/figures/LE-figures/subject-6-torque-v-angle-knee.pdf}}
+        \caption{Measured and inferred ankle kinetics for subject 6. Curves are shown for velocities inside and outside the training data. Dashed curves lie on the extrema of the test points and the
+experimental values for the curves of 0.8, 1.2 and 1.6m/s are shown as well.}
+    \end{figure}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}[plain,noframenumbering]
+    \frametitle{Chapter V: Hardware results}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth]{/home/nd/cloud/thesis/figures/LE-figures/mainResult-slow.pdf}
+        \vspace{-1em}
+        \caption{Experimental results of walking at $v=0.37$m/s} 
+    \end{figure}
+\end{frame}
+
+\begin{frame}[plain,noframenumbering]
+    \frametitle{Chapter V: Conclusion and future work}
+    \begin{itemize}
+        \item Demonstrated a robust method for smoothly (and anthropomimetically) transitioning between velocities 
+        \item Hardware and simulation tests, demonstrate that for isolated test-cases the method performs well
+        \item Safety is account for (though not yet implemented) due to the uncertainty quantifications inherent in GP
+           construction 
+        \item {\bf Future work}: 
+            \begin{itemize}
+                \item Implement sharing of information through coregionalised (vector output) GPs
+                \item Investigate methods for most efficiently transitioning between instances (could involve DMPs)
+                \item Proposition methods for conjoining (effectively sewing together) locomotion envelopes for
+                    different locomotion instances (e.g. LEs for biking, LEs for walking up a staircase) 
+                \item Need to develop methods which take complex noise models into account
+            \end{itemize}
+    \end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\section{Conclusion}
+\begin{frame}[plain,noframenumbering]
+    \frametitle{{\bf Conclusion and future work}}
+    \begin{itemize}
+        \item Have demonstrated and suggested various `primitives' that \emph{could} form part of
+            \citet{tucker2015control}'s hierarchical control stratification
+        \item Obviously lacking is an overarching (i.e. \emph{global}) system that can selectively use these primitives
+            to restore locomotion to people with AAMs
+        \item Proposed methods include a mix of unsupervised and supervised learning strategies, ultimately though, we
+            posit that these methods will have to be predominantly unsupervised 
+        \item {\bf The ultimate goal:} We envision, ideally and eventually, a system capable of merely being `put on',
+            without the tedious parameter tuning, capable of establishing faithful and comfortable locomotion, which
+            becomes \emph{better} with time as the system learns and adapts to its user (not unlike one-shot
+            learning)
+    \end{itemize}
+\end{frame}
 
 
 \iffalse % everything until \fi is not included in the slides
@@ -906,37 +990,26 @@ correspondent manifold, for the AAM on the right.}
         \subfloat[Collared lions]{\includegraphics[width=1.\textwidth]{figures/lionCollar.jpg}}
     \end{figure}
 \end{columns}
-\end{frame}
-
-\begin{frame}[plain,noframenumbering]
-    \frametitle{Labelling lion observations: fuzzy ground-truth}
-
-    % 13:29:15 cool stuff: drinkin
-    \begin{figure}
-        \centering
-        \includegraphics[width=0.3\linewidth]{figures/speaker.png}
-    \end{figure}
+    \end{frame}
 
 
-\end{frame}
-
-\begin{frame}[plain,noframenumbering]
-    \frametitle{Labelling lion observations}
-    \begin{figure}[ht!]
-        \includegraphics[width=0.92\linewidth]{figures/PAPER-main-result.eps}
-        \vspace{-0.5em}
-        \caption{{\bf top} --  signal, {\bf middle} -- state sequences inferred by models through unsupervised learning and {\bf bottom} -- manually labelled fuzzy ground truth state sequence}
-    \end{figure}
-\end{frame}
+    \begin{frame}[plain,noframenumbering]
+        \frametitle{Labelling lion observations}
+        \begin{figure}[ht!]
+            \includegraphics[width=0.92\linewidth]{figures/PAPER-main-result.eps}
+            \vspace{-0.5em}
+            \caption{{\bf top} --  signal, {\bf middle} -- state sequences inferred by models through unsupervised learning and {\bf bottom} -- manually labelled fuzzy ground truth state sequence}
+        \end{figure}
+    \end{frame}
 
 
-\begin{frame}[plain,noframenumbering]
-    \frametitle{Detailed analysis: a hunt}
-    \begin{figure}
-        \includegraphics[width=\linewidth]{figures/new-main-plot.pdf}
-        \caption{{\bf first two panels} -- signal and ground truth; {\bf next two panels} -- zoomed in; {\bf final two panels} --  assigned detailed labelling by IDHMM and stateful IDHMM as established by listening to audio, ``concluding'' that models learned \emph{meaningful} new behaviours.}
-    \end{figure}
-\end{frame}
+    \begin{frame}[plain,noframenumbering]
+        \frametitle{Detailed analysis: a hunt}
+        \begin{figure}
+            \includegraphics[width=0.9\linewidth]{figures/new-main-plot.pdf}
+            \caption{{\bf first two panels} -- signal and ground truth; {\bf next two panels} -- zoomed in; {\bf final two panels} --  assigned detailed labelling by IDHMM and stateful IDHMM as established by listening to audio, ``concluding'' that models learned \emph{meaningful} new behaviours.}
+        \end{figure}
+    \end{frame}
 
 
-\end{document} 
+    \end{document} 

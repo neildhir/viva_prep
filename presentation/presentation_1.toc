@@ -5,3 +5,4 @@
 \beamer@sectionintoc {2}{Chapter III: Incidence detection [Perception layer]}{6}{0}{2}
 \beamer@sectionintoc {3}{Chapter IV: Dynamics identification via time-series segmentation [Perception layer]}{12}{0}{3}
 \beamer@sectionintoc {4}{Chapter V: Gaussian process regression for prosthesis control [Translation/Execution layer]}{24}{0}{4}
+\beamer@sectionintoc {5}{Conclusion}{33}{0}{5}
