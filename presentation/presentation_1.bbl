@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{13}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -30,6 +30,14 @@ Neil Dhir and Frank Wood.
   36th Annual International Conference of the IEEE}, pages 582--585. IEEE,
   2014.
 
+\bibitem[Dhir et~al.(2017)Dhir, Wood, V{\'a}k{\'a}r, Markham, Wijers,
+  Trethowan, Du~Preez, Loveridge, and MacDonald]{dhir2017interpreting}
+Neil Dhir, Frank Wood, Matthijs V{\'a}k{\'a}r, Andrew Markham, Matthew Wijers,
+  Paul Trethowan, Byron Du~Preez, Andrew Loveridge, and David MacDonald.
+\newblock Interpreting lion behaviour with nonparametric probabilistic
+  programs.
+\newblock UAI, 2017.
+
 \bibitem[Ferguson(1973)]{ferguson1973bayesian}
 Thomas~S Ferguson.
 \newblock A bayesian analysis of some nonparametric problems.
@@ -45,6 +53,11 @@ Peter Orbanz.
 \newblock Lecture notes on bayesian nonparametrics.
 \newblock \emph{Journal of Mathematical Psychology}, 56:\penalty0 1--12, 2012.
 
+\bibitem[Perov(2016)]{perov2016applications}
+Yura~N Perov.
+\newblock Applications of probabilistic programming (master's thesis, 2015).
+\newblock \emph{arXiv preprint arXiv:1606.00075}, 2016.
+
 \bibitem[Teh and Jordan(2010)]{teh2010hierarchical}
 Yee~Whye Teh and Michael~I Jordan.
 \newblock Hierarchical bayesian nonparametric models with applications.
@@ -54,6 +67,13 @@ Yee~Whye Teh and Michael~I Jordan.
 Yee~Whye Teh, Michael~I Jordan, Matthew~J Beal, and David~M Blei.
 \newblock Hierarchical dirichlet processes.
 \newblock \emph{Journal of the american statistical association}, 2012.
+
+\bibitem[Tolpin et~al.(2015)Tolpin, van~de Meent, and
+  Wood]{tolpin2015probabilistic}
+David Tolpin, Jan-Willem van~de Meent, and Frank Wood.
+\newblock Probabilistic programming in anglican.
+\newblock In \emph{Joint European Conference on Machine Learning and Knowledge
+  Discovery in Databases}, pages 308--311. Springer, 2015.
 
 \bibitem[Tucker et~al.(2015)Tucker, Olivier, Pagel, Bleuler, Bouri, Lambercy,
   del R~Mill{\'a}n, Riener, Vallery, and Gassert]{tucker2015control}
