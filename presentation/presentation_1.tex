@@ -441,9 +441,8 @@ prosthesis control}
 \end{frame}
 
 %------------------------------------------------
-\section{State-space models}
 \begin{frame}[plain,noframenumbering]
-    \frametitle{State space models}
+    \frametitle{Chapter IV: Adding a temporal component via state space models}
 
     \begin{columns}
         \column{0.5\textwidth}
@@ -485,9 +484,8 @@ prosthesis control}
 
 
 %------------------------------------------------
-\section{Bayesian nonparametrics + state-space models}
 \begin{frame}[plain,noframenumbering]
-    \frametitle{Bayesian nonparametrics + state-space models}
+    \frametitle{Chapter IV: Bayesian nonparametrics + state-space models}
 
     %\begin{itemize}
     %\item Bayesian treatment of models with infinitely many parameters
@@ -542,7 +540,7 @@ prosthesis control}
 
 %------------------------------------------------
 \begin{frame}[plain,noframenumbering]
-    \frametitle{A sm\"{o}rg\aa sbord of models (and that's the whole point)}
+    \frametitle{Chapter IV: A sm\"{o}rg\aa sbord of models}
 
     \vspace{-1em}
     \begin{figure}[ht!]
@@ -554,33 +552,11 @@ prosthesis control}
         \caption{BNP \emph{discrete} SSMs used in this work.}
     \end{figure}
 \end{frame}
-%    \begin{columns}[t]
-
-%\column{0.5\textwidth}
-%We compared
-%\begin{itemize}
-%    \item HDP-HMM
-%    \item Lightweight modifications: sticky and stateful HDP-HMM to encourage state persistence
-%    \item IDHMM, a novel BNP version of HSMM with non-parametric treatment of state and duration distributions
-%\end{itemize}
-
-%\column{.5\textwidth} % Right column and width
-
-%\begin{figure}
-%    \includegraphics[width=1.0\linewidth]{hdphmm.eps}
-%    % \caption{HDP-HMM.}
-%\end{figure}
-%\vspace{-0.5cm}
-%\begin{figure}
-%    \includegraphics[width=1.0\linewidth]{HDPEDHMM.eps}
-%    \caption{HDP-HMM and IDHMM.}
-%\end{figure}
-%\end{columns}
 
 %------------------------------------------------
-\section{Synthetic experiments}
+
 \begin{frame}[plain,noframenumbering]
-    \frametitle{Synthetic experiments}
+    \frametitle{Chapter IV: Synthetic experiments}
     \begin{figure}[ht!]
         \subfloat[Observations w. GT]{\includegraphics[width=.33\textwidth]{figures/PAPER-synthetic-data.pdf}}\hfill
         \subfloat[Hamming distance]{\includegraphics[width=.33\textwidth]{figures/Hamming-distance.pdf}}\hfill
@@ -591,7 +567,7 @@ prosthesis control}
 \end{frame}
 
 \begin{frame}[plain,noframenumbering]
-    \frametitle{Synthetic experiments}
+    \frametitle{Chapter IV: Synthetic experiments}
     \begin{figure}[ht!]
         \subfloat[Duration priors]{\includegraphics[width=.33\textwidth]{figures/PAPER-duration-distributions.pdf}}\hfill
         \subfloat[Gaussian mixture duration]{\includegraphics[width=.33\textwidth]{figures/gaussian-durations.pdf}}\hfill
@@ -601,10 +577,311 @@ prosthesis control}
 \end{frame}
 
 %------------------------------------------------
-\section{Labelling lion observations}
+\begin{frame}[plain,noframenumbering]
+    \frametitle{Chapter IV: Conclusion and future work}
+    \begin{itemize}
+        \item Bayesian nonparametric state-space models show promise in this difficult domain 
+        \item For sequence modelling and novelty detection, these models could make unsupervised time-series
+            segmentation more interpretable 
+        \item Purely as a first pass through the data, this approach allows the scientist to identify regions of interest
+        \item By using a PPS we can quickly iterate over state-space models which are 
+            \begin{itemize}
+                \item Non I.I.D.  and which have non-geometric durations
+                \item Unsupervised
+                \item Nonparametric
+            \end{itemize}
+        \item {\bf Future work}: incorporate domain knowledge through priors, semi-supervised learning, transfer
+            learning between different observation domains (e.g. different human users, or different animals in an
+            animal modelling setting). 
+    \end{itemize}
+\end{frame}
+
+%------------------------------------------------
 
 \begin{frame}[plain]
-    \subsection{What is the problem and why do we care?}
+    \frametitle{Reminder: Where are we now in the control hierarchy?}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.9\textwidth]{figures/tucker.png}
+        \caption{Generalised control framework for active prostheses and orthoses \citep{tucker2015control}.}
+    \end{figure}
+\end{frame}
+
+%------------------------------------------------
+
+\section{Chapter V: Gaussian process regression for prosthesis control [Translation/Execution layer]} 
+
+\begin{frame}[plain]
+    \frametitle{Chapter V: Gaussian process regression for prosthesis control [Translation/Execution layer]} 
+    \begin{columns}[t] 
+        \column{.5\textwidth} % Left column and width
+        \fbox{
+            \begin{minipage}{7cm}
+                The purpose of the mid-level controller is to convert the estimated intent output 
+                from the high-level controller to a device state for the low-level controller to track.
+            \end{minipage}
+        }
+        \begin{itemize}
+            \item Want to illicit smooth anthropomimetic transition between incidents (velocities) 
+            \item `Locomotion envelopes' (collection of multivariate GPR vector fields) provides one way of achieving
+                this goal 
+            \item Transition has to be done safely i.e. with uncertainty estimates on predictions $\rightarrow$ GPs are a
+                natural fit
+        \end{itemize}
+        \column{.5\textwidth} % Right column and width
+        \vspace{-1cm}
+        \begin{figure}
+            \centering
+            %\includegraphics[angle=0,width=.45\textwidth]{/home/nd/cloud/thesis/figures/LE-figures/prosthesis.JPG}
+            \includegraphics[width=.6\textwidth]{/home/nd/cloud/thesis/figures/LE-figures/prosthesis-final2-mirrored.jpg}
+            \caption{Test-bed (experimental prosthesis)}
+        \end{figure}
+    \end{columns}
+\end{frame}
+
+\begin{frame}[plain]
+    \frametitle{Chapter V: High-level idea} 
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth]{/home/nd/cloud/thesis/figures/common-figures/human-robot-function-learning.eps}
+        \caption{A simplified illustration of a human locomotion manifold on the left, and its
+correspondent manifold, for the AAM on the right.}
+    \end{figure}
+    We can learn this mapping using Gaussian process regression.
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}[plain,noframenumbering]
+    \frametitle{Chapter V: Observations for supervised learning}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth]{/home/nd/cloud/thesis/figures/LE-figures/ankle-angle-trajectories-time-subject-6.pdf}
+        \caption{Un-normalised ankle plantarflexion angle with $\pm$ two standard deviations, for subject 6, during normal walking at three different speeds.}
+    \end{figure}
+\end{frame}
+
+
+%------------------------------------------------
+
+\begin{frame}[plain,noframenumbering]
+    \frametitle{Chapter V: Gaussian process regression}
+    \begin{figure}[ht!]
+        \subfloat[Training inputs X with
+        targetsy.]{\includegraphics[width=.32\textwidth]{/home/nd/cloud/thesis/figures/LE-figures/heatmapTrainPlot-ID17-Right_Ankle_PlantarFlexion_Angle.eps}}
+        \subfloat[Posterior predictive mean function as
+        heatmap.]{\includegraphics[width=.32\textwidth]{/home/nd/cloud/thesis/figures/LE-figures/heatmapPlot-ID17-Right_Ankle_PlantarFlexion_Angle.eps}}\hfill
+        \subfloat[Posterior predictive mean surface for tests
+        inputs]{\includegraphics[width=.31\textwidth]{/home/nd/cloud/thesis/figures/LE-figures/manifoldPlot-ID17-Right_Ankle_PlantarFlexion_Angle.eps}}\hfill
+\caption{Workflow used in obtaining an ankle plantarflexion angle regression manifold, for subject 17.}
+    \end{figure}
+\end{frame}
+
+
+
+\iffalse % everything until \fi is not included in the slides
+%------------------------------------------------
+\begin{frame}[plain,noframenumbering]
+    \frametitle{Lion ecology}
+
+    \begin{itemize}
+        \item In sequential acceleration data there is a natural dependence between observations of movement or behaviour. Most analyses are \textcolor{red}{i.d.d.} and ignore this.
+        \item Analysis of acceleration data
+            has been focused on identifying patterns in the observed waveforms that correspond to a known behaviour or movement mode: \textcolor{red}{parametric statistics}
+        \item This requires observing the animal, manually assigning labels corresponding to behaviours to segments of the data - such \textcolor{red}{supervised learning} is often expensive and not always feasible
+        \item Most work in this area has been \textcolor{red}{frequentist} in nature; significant prior domain knowledge (from zoologist) is currently not incorporated in the statistical analysis
+    \end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}[plain,noframenumbering]
+    \frametitle{Lions as state space models (SSM)}
+
+    In this work, we propose to mend these four deficiencies through a new flavour of SSM which effects full
+
+    \begin{itemize}
+        \item non-IID
+        \item unsupervised (though we allow for semi-supervision)
+        \item Bayesian
+        \item nonparametric
+    \end{itemize}
+    -learning.
+
+    \begin{block}{Take home}
+        This allows us to: produce a \textcolor{red}{segmentation and clustering} of \textcolor{red}{sequential} biotelemetry data, taking into account zoologists \textcolor{red}{domain knowledge}, as well as \textcolor{red}{observations}, and allowing us to not only \textcolor{red}{recognise known behaviours}, but also \textcolor{red}{discover new behaviours}.
+    \end{block}
+
+    % \begin{figure}
+    %   \includegraphics[width=0.8\linewidth]{para.png}
+    %   \caption{left: parametric case ; right: nonparametric case}
+    % \end{figure}
+
+\end{frame}
+
+%------------------------------------------------
+
+\section{State space modelling}
+
+\subsection{Hidden Markov model}
+\begin{frame}[plain,noframenumbering]
+    \frametitle{State space models: Hidden Markov model}
+
+
+    \begin{columns}[c] 
+
+        \column{.5\textwidth} 
+
+        \begin{itemize}
+            \item HMMs are SSMs with discrete states
+            \item HMMs have a latent Markov process that transitions between a finite number of discrete states at discrete times and is endowed with per state emission distributions.
+            \item HMMs is a highly successful model in some domains, but is subject to \textcolor{red}{two} very large deficiencies
+        \end{itemize}
+
+        \column{.5\textwidth} % Right column and width
+
+        \begin{figure}
+            \includegraphics[width=1.0\linewidth]{hmm.png}
+            \caption{Hidden Markov model.}
+        \end{figure}
+
+    \end{columns}
+
+\end{frame}
+
+%------------------------------------------------
+
+\section{Results}
+\subsection{Synthetic observations}
+\begin{frame}[plain,noframenumbering]
+    \frametitle{Synthetic observations}
+
+    \begin{columns}[c] 
+
+        \column{.5\textwidth} 
+
+        \begin{figure}
+            \includegraphics[width=1.0\linewidth]{synthetic-data-plot-data1.pdf}
+            \caption{Synthetic observations one.}
+        \end{figure}
+
+        \column{.5\textwidth} % Right column and width
+
+        \begin{figure}
+            \includegraphics[width=1.0\linewidth]{synthetic-data-plot-data2.pdf}
+            \caption{Synthetic observations two.}
+        \end{figure}
+
+    \end{columns}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}[plain,noframenumbering]
+    \frametitle{Sample latent sequences}
+
+    \begin{columns}[c] 
+
+        \column{.5\textwidth} 
+
+        \begin{figure}
+            \includegraphics[width=1.0\linewidth]{state-seq-data1.pdf}
+            \caption{Sample latent sequences for observations set one.}
+        \end{figure}
+
+        \column{.5\textwidth} % Right column and width
+
+        \begin{figure}
+            \includegraphics[width=1.0\linewidth]{state-seq-data2.pdf}
+            \caption{Sample latent sequences for observations set two.}
+        \end{figure}
+
+    \end{columns}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}[plain,noframenumbering]
+    \frametitle{Hamming distances}
+
+    \begin{columns}[c] 
+
+        \column{.5\textwidth} 
+
+        \begin{figure}
+            \includegraphics[width=1.0\linewidth]{hamming-distance-plot-data1.pdf}
+            \caption{Hamming distance for observations set one.}
+        \end{figure}
+
+        \column{.5\textwidth} % Right column and width
+
+        \begin{figure}
+            \includegraphics[width=1.0\linewidth]{hamming-distance-plot-data2.pdf}
+            \caption{Hamming distance for observations set two.}
+        \end{figure}
+
+    \end{columns}
+
+\end{frame}
+
+%------------------------------------------------
+
+\subsection{Lion (Panthera leo) observations}
+\begin{frame}[plain,noframenumbering]
+    \frametitle{Lion observations}
+
+    \begin{figure}
+        \includegraphics[width=1.0\linewidth]{acc-10p-50s-again-vacar.pdf}
+        \caption{Raw tri-axial acceleration observations.}
+    \end{figure}
+
+
+\end{frame}
+
+%------------------------------------------------
+
+
+\section{Anglican queries}
+\begin{frame}[plain,noframenumbering]
+    \frametitle{Anglican queries}
+
+    \begin{itemize}
+        \item HDP implementation
+        \item mixtures
+        \item inference (SMC inference, particles and samples)
+            % \item \textit{other state space models}
+    \end{itemize}
+
+\end{frame}
+
+
+\fi
+
+%------------------------------------------------
+
+\begin{frame}[plain,noframenumbering]
+    \begin{figure}
+        \includegraphics[width=0.5\linewidth]{figures/lion.eps}
+    \end{figure}
+    \Huge{\centerline{Questions?}}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\begin{frame}[plain,noframenumbering]
+    \frametitle{References}
+    \footnotesize
+    \bibliographystyle{plainnat}
+    \nocite{*}
+    \bibliography{talk}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}[plain]
     \frametitle{Understanding animal behaviour from observations} 
     \begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
 
@@ -629,337 +906,37 @@ prosthesis control}
         \subfloat[Collared lions]{\includegraphics[width=1.\textwidth]{figures/lionCollar.jpg}}
     \end{figure}
 \end{columns}
-    \end{frame}
+\end{frame}
 
+\begin{frame}[plain,noframenumbering]
+    \frametitle{Labelling lion observations: fuzzy ground-truth}
 
+    % 13:29:15 cool stuff: drinkin
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.3\linewidth]{figures/speaker.png}
+    \end{figure}
 
-    \begin{frame}[plain,noframenumbering]
-        \frametitle{Labelling lion observations: fuzzy ground-truth}
 
-        % 13:29:15 cool stuff: drinkin
-        \begin{figure}
-            \centering
-            \includegraphics[width=0.3\linewidth]{figures/speaker.png}
-        \end{figure}
+\end{frame}
 
+\begin{frame}[plain,noframenumbering]
+    \frametitle{Labelling lion observations}
+    \begin{figure}[ht!]
+        \includegraphics[width=0.92\linewidth]{figures/PAPER-main-result.eps}
+        \vspace{-0.5em}
+        \caption{{\bf top} --  signal, {\bf middle} -- state sequences inferred by models through unsupervised learning and {\bf bottom} -- manually labelled fuzzy ground truth state sequence}
+    \end{figure}
+\end{frame}
 
-    \end{frame}
 
+\begin{frame}[plain,noframenumbering]
+    \frametitle{Detailed analysis: a hunt}
+    \begin{figure}
+        \includegraphics[width=\linewidth]{figures/new-main-plot.pdf}
+        \caption{{\bf first two panels} -- signal and ground truth; {\bf next two panels} -- zoomed in; {\bf final two panels} --  assigned detailed labelling by IDHMM and stateful IDHMM as established by listening to audio, ``concluding'' that models learned \emph{meaningful} new behaviours.}
+    \end{figure}
+\end{frame}
 
 
-
-    \begin{frame}[plain,noframenumbering]
-        \frametitle{Labelling lion observations}
-        \begin{figure}[ht!]
-            \includegraphics[width=0.92\linewidth]{figures/PAPER-main-result.eps}
-            \vspace{-0.5em}
-            \caption{{\bf top} --  signal, {\bf middle} -- state sequences inferred by models through unsupervised learning and {\bf bottom} -- manually labelled fuzzy ground truth state sequence}
-        \end{figure}
-    \end{frame}
-
-
-    \begin{frame}[plain,noframenumbering]
-        \frametitle{Detailed analysis: a hunt}
-        \begin{figure}
-            \includegraphics[width=\linewidth]{figures/new-main-plot.pdf}
-            \caption{{\bf first two panels} -- signal and ground truth; {\bf next two panels} -- zoomed in; {\bf final two panels} --  assigned detailed labelling by IDHMM and stateful IDHMM as established by listening to audio, ``concluding'' that models learned \emph{meaningful} new behaviours.}
-        \end{figure}
-    \end{frame}
-
-
-
-
-
-    %------------------------------------------------
-    \section{Conclusion}
-    \begin{frame}[plain,noframenumbering]
-        \frametitle{Conclusion and future work}
-        \begin{itemize}
-            \item Bayesian nonparametric state-space models show promise in this difficult domain 
-            \item For sequence modelling and novelty detection, these models could make animal ecology more interpretable
-            \item Purely as a first pass through the data, this approach allows the zoologist to identify regions of interest
-            \item By using PPS we can quickly iterate over state-space models which are 
-                \begin{itemize}
-                    \item Non I.I.D.  and which have non-geometric durations
-                    \item Unsupervised
-                    \item Nonparametric
-                \end{itemize}
-            \item {\bf Future work}: incorporate domain knowledge through priors, semi-supervised learning, use audio as observations, transfer learning between members of the pride and like everyone else we too are exploring sequence modelling via \emph{deep learning} 
-        \end{itemize}
-    \end{frame}
-
-
-    \iffalse % everything until \fi is not included in the slides
-    %------------------------------------------------
-    \begin{frame}[plain,noframenumbering]
-        \frametitle{Lion ecology}
-
-        \begin{itemize}
-            \item In sequential acceleration data there is a natural dependence between observations of movement or behaviour. Most analyses are \textcolor{red}{i.d.d.} and ignore this.
-            \item Analysis of acceleration data
-                has been focused on identifying patterns in the observed waveforms that correspond to a known behaviour or movement mode: \textcolor{red}{parametric statistics}
-            \item This requires observing the animal, manually assigning labels corresponding to behaviours to segments of the data - such \textcolor{red}{supervised learning} is often expensive and not always feasible
-            \item Most work in this area has been \textcolor{red}{frequentist} in nature; significant prior domain knowledge (from zoologist) is currently not incorporated in the statistical analysis
-        \end{itemize}
-
-    \end{frame}
-
-    %------------------------------------------------
-
-    \begin{frame}[plain,noframenumbering]
-        \frametitle{Lions as state space models (SSM)}
-
-        In this work, we propose to mend these four deficiencies through a new flavour of SSM which effects full
-
-        \begin{itemize}
-            \item non-IID
-            \item unsupervised (though we allow for semi-supervision)
-            \item Bayesian
-            \item nonparametric
-        \end{itemize}
-        -learning.
-
-        \begin{block}{Take home}
-            This allows us to: produce a \textcolor{red}{segmentation and clustering} of \textcolor{red}{sequential} biotelemetry data, taking into account zoologists \textcolor{red}{domain knowledge}, as well as \textcolor{red}{observations}, and allowing us to not only \textcolor{red}{recognise known behaviours}, but also \textcolor{red}{discover new behaviours}.
-        \end{block}
-
-        % \begin{figure}
-        %   \includegraphics[width=0.8\linewidth]{para.png}
-        %   \caption{left: parametric case ; right: nonparametric case}
-        % \end{figure}
-
-    \end{frame}
-
-    %------------------------------------------------
-
-    \section{State space modelling}
-
-    \subsection{Hidden Markov model}
-    \begin{frame}[plain,noframenumbering]
-        \frametitle{State space models: Hidden Markov model}
-
-
-        \begin{columns}[c] 
-
-            \column{.5\textwidth} 
-
-            \begin{itemize}
-                \item HMMs are SSMs with discrete states
-                \item HMMs have a latent Markov process that transitions between a finite number of discrete states at discrete times and is endowed with per state emission distributions.
-                \item HMMs is a highly successful model in some domains, but is subject to \textcolor{red}{two} very large deficiencies
-            \end{itemize}
-
-            \column{.5\textwidth} % Right column and width
-
-            \begin{figure}
-                \includegraphics[width=1.0\linewidth]{hmm.png}
-                \caption{Hidden Markov model.}
-            \end{figure}
-
-        \end{columns}
-
-    \end{frame}
-
-    % --------------------------
-
-    \begin{frame}[plain,noframenumbering]
-        \frametitle{Serious HMM problems}
-
-        Even after four decades of work on HMMs, significant problems remain.
-
-        \begin{block}{Key issues}
-            \begin{enumerate}
-                \item The model requires the state cardinality to be set \textit{a priori.}
-                \item The duration model is limited to a class of geometric distributions $\mathbb{P}(d) = a^{d-1} (1-a)$ where $d$ denotes the duration of a given switching state and $a$ denotes the Markov transition probability of a self-transition
-            \end{enumerate}
-        \end{block}
-
-    \end{frame}
-
-    % --------------------------
-    \begin{frame}[plain,noframenumbering]
-        \frametitle{Addressing HMM issues}
-
-        \begin{columns}[c] 
-
-            \column{.5\textwidth} 
-
-            \begin{itemize}
-                \item The hierarchical Dirichlet process (HDP) HMM addressed the state cardinality issue
-                \item The sticky and stateful -HDP-HMM attempted to address the duration issue, with great success in some domains
-                \item The HDP-EDHMM (and HDP-HSMM) goes one step further by allowing for explicit duration distributions
-            \end{itemize}
-
-            \column{.5\textwidth} % Right column and width
-
-            \begin{figure}
-                \includegraphics[width=1.0\linewidth]{hdphmm.eps}
-                \caption{HDP-HMM.}
-            \end{figure}
-            \vspace{-1cm}
-            \begin{figure}
-                \includegraphics[width=1.0\linewidth]{sticky-hdphmm.eps}
-                \caption{Sticky HDP-HMM.}
-            \end{figure}
-
-        \end{columns}
-
-    \end{frame}
-
-    %------------------------------------------------
-
-    \subsection{HDP-EDHMM}
-    \begin{frame}[plain,noframenumbering]
-        \frametitle{HDP-EDHMM \textcolor{red}{THIS IMAGE AN OLD VERSION. UPDATE WITH NEW ONE FROM PAPER.}}
-
-        \begin{figure}
-            \includegraphics[width=1.0\linewidth]{HDPEDHMM.eps}
-            \caption{HDP-EDHMM.}
-        \end{figure}
-
-
-    \end{frame}
-
-    %------------------------------------------------
-
-    \section{Inference via Probabilistic Programming}
-    \begin{frame}[plain,noframenumbering]
-        \frametitle{Inference}
-
-    \end{frame}
-
-    %------------------------------------------------
-
-    \section{Results}
-    \subsection{Synthetic observations}
-    \begin{frame}[plain,noframenumbering]
-        \frametitle{Synthetic observations}
-
-        \begin{columns}[c] 
-
-            \column{.5\textwidth} 
-
-            \begin{figure}
-                \includegraphics[width=1.0\linewidth]{synthetic-data-plot-data1.pdf}
-                \caption{Synthetic observations one.}
-            \end{figure}
-
-            \column{.5\textwidth} % Right column and width
-
-            \begin{figure}
-                \includegraphics[width=1.0\linewidth]{synthetic-data-plot-data2.pdf}
-                \caption{Synthetic observations two.}
-            \end{figure}
-
-        \end{columns}
-
-    \end{frame}
-
-    %------------------------------------------------
-
-    \begin{frame}[plain,noframenumbering]
-        \frametitle{Sample latent sequences}
-
-        \begin{columns}[c] 
-
-            \column{.5\textwidth} 
-
-            \begin{figure}
-                \includegraphics[width=1.0\linewidth]{state-seq-data1.pdf}
-                \caption{Sample latent sequences for observations set one.}
-            \end{figure}
-
-            \column{.5\textwidth} % Right column and width
-
-            \begin{figure}
-                \includegraphics[width=1.0\linewidth]{state-seq-data2.pdf}
-                \caption{Sample latent sequences for observations set two.}
-            \end{figure}
-
-        \end{columns}
-
-    \end{frame}
-
-    %------------------------------------------------
-
-    \begin{frame}[plain,noframenumbering]
-        \frametitle{Hamming distances}
-
-        \begin{columns}[c] 
-
-            \column{.5\textwidth} 
-
-            \begin{figure}
-                \includegraphics[width=1.0\linewidth]{hamming-distance-plot-data1.pdf}
-                \caption{Hamming distance for observations set one.}
-            \end{figure}
-
-            \column{.5\textwidth} % Right column and width
-
-            \begin{figure}
-                \includegraphics[width=1.0\linewidth]{hamming-distance-plot-data2.pdf}
-                \caption{Hamming distance for observations set two.}
-            \end{figure}
-
-        \end{columns}
-
-    \end{frame}
-
-    %------------------------------------------------
-
-    \subsection{Lion (Panthera leo) observations}
-    \begin{frame}[plain,noframenumbering]
-        \frametitle{Lion observations}
-
-        \begin{figure}
-            \includegraphics[width=1.0\linewidth]{acc-10p-50s-again-vacar.pdf}
-            \caption{Raw tri-axial acceleration observations.}
-        \end{figure}
-
-
-    \end{frame}
-
-    %------------------------------------------------
-
-
-    \section{Anglican queries}
-    \begin{frame}[plain,noframenumbering]
-        \frametitle{Anglican queries}
-
-        \begin{itemize}
-            \item HDP implementation
-            \item mixtures
-            \item inference (SMC inference, particles and samples)
-                % \item \textit{other state space models}
-        \end{itemize}
-
-    \end{frame}
-
-
-    \fi
-
-    %------------------------------------------------
-
-    \begin{frame}[plain,noframenumbering]
-        \begin{figure}
-            \includegraphics[width=0.5\linewidth]{figures/lion.eps}
-        \end{figure}
-        \Huge{\centerline{Questions?}}
-    \end{frame}
-
-    %----------------------------------------------------------------------------------------
-
-    \begin{frame}[plain,noframenumbering]
-        \frametitle{References}
-        \footnotesize
-        \bibliographystyle{plainnat}
-        \nocite{*}
-        \bibliography{talk}
-    \end{frame}
-
-    %------------------------------------------------
-
-
-
-
-    \end{document} 
+\end{document} 

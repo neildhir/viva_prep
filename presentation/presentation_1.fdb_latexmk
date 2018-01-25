@@ -1,14 +1,20 @@
 # Fdb version 3
-["bibtex presentation_1"] 1516890500 "presentation_1.aux" "presentation_1.bbl" "presentation_1" 1516890538
+["bibtex presentation_1"] 1516895630 "presentation_1.aux" "presentation_1.bbl" "presentation_1" 1516896415
   "/usr/share/texlive/texmf-dist/bibtex/bst/natbib/plainnat.bst" 1480098435 26816 ffe5423d2019860bad9f54bc402fac15 ""
-  "presentation_1.aux" 1516890538 10043 1e7f97efb2016049d0f6924485c9894d ""
+  "presentation_1.aux" 1516896415 9415 029bb6a4b23f8f105d96befaedbdefe0 ""
   "presentation_1.bcf" 0 -1 0 ""
   "talk.bib" 1516890310 3492 71ce764561b8448645d4ec9d32ccdbcc ""
   (generated)
   "presentation_1.blg"
   "presentation_1.bbl"
-["pdflatex"] 1516890537 "presentation_1.tex" "presentation_1.pdf" "presentation_1" 1516890538
+["pdflatex"] 1516896413 "presentation_1.tex" "presentation_1.pdf" "presentation_1" 1516896415
   "/etc/texmf/web2c/texmf.cnf" 1510676721 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/nd/cloud/thesis/figures/LE-figures/ankle-angle-trajectories-time-subject-6.pdf" 1500575018 79919 6eb723ca6558b5bb6803c9b684dc1f5a ""
+  "/home/nd/cloud/thesis/figures/LE-figures/heatmapPlot-ID17-Right_Ankle_PlantarFlexion_Angle.eps" 1499508348 70479 6e8f6cd4d2e7dfa5fc28ffc5f937e703 ""
+  "/home/nd/cloud/thesis/figures/LE-figures/heatmapTrainPlot-ID17-Right_Ankle_PlantarFlexion_Angle.eps" 1499508348 159220 be3e218eedc11affed3000cb2e5e6b29 ""
+  "/home/nd/cloud/thesis/figures/LE-figures/manifoldPlot-ID17-Right_Ankle_PlantarFlexion_Angle.eps" 1500575018 139255 d3ec0d03ff0cbf2e42427dff80f4dd85 ""
+  "/home/nd/cloud/thesis/figures/LE-figures/prosthesis-final2-mirrored.jpg" 1505649638 1882817 e89b4f6853e4337fe9f08c4795d811c6 ""
+  "/home/nd/cloud/thesis/figures/common-figures/human-robot-function-learning.eps" 1505142326 2864578 88cc02d338d3fdb93145adb16523228b ""
   "/home/nd/cloud/thesis/figures/dr_main.eps" 1497637766 126546 deb23cb61dc33c0a616185da2adfb291 ""
   "/home/nd/cloud/thesis/figures/foo2_updates2.eps" 1497637766 115598 c6f8eef8faffe3cf46d6e542d39432ec ""
   "/home/nd/cloud/thesis/figures/luvstrek-data-plot.pdf" 1507283203 129742 4aab23800d5b407295e3c72ad1d6a716 ""
@@ -254,12 +260,12 @@
   "figures/stickyHDPHMM.eps" 1516788083 195180 b52d9794e3f2190624c516b244215713 ""
   "figures/tolpin-model.png" 1516889893 75154 784f3e8bca82c8a4d32f0a5d30cd6ed0 ""
   "figures/tucker.png" 1516871354 152554 67318807d203ec57d1361db7813ae06a ""
-  "presentation_1.aux" 1516890538 10043 1e7f97efb2016049d0f6924485c9894d ""
-  "presentation_1.bbl" 1516890500 3724 6857fb040dcdb514494e1cbd2b322b51 "bibtex presentation_1"
-  "presentation_1.nav" 1516890538 5025 6e6d94e63cc91182a721161030fa79cd ""
-  "presentation_1.out" 1516890538 811 2ff884d3e65fd61f2a5d521ba1fbe43c ""
-  "presentation_1.tex" 1516890536 39689 b17f7e63277658bba9e2acb19ec89feb ""
-  "presentation_1.toc" 1516890538 794 234570dfc34ed80eb5c7c3b8af57dd02 ""
+  "presentation_1.aux" 1516896415 9415 029bb6a4b23f8f105d96befaedbdefe0 ""
+  "presentation_1.bbl" 1516895630 3724 6857fb040dcdb514494e1cbd2b322b51 "bibtex presentation_1"
+  "presentation_1.nav" 1516896415 4742 2ae7c4b4a79b268d90418094e91e6e41 ""
+  "presentation_1.out" 1516896415 550 19d349d2180065712b29c9389d96c504 ""
+  "presentation_1.tex" 1516896413 39726 a978659a851a427dbda012ac3bde5d18 ""
+  "presentation_1.toc" 1516896415 535 5db0973cbdc79be5c3d0a5e3340ef957 ""
   (generated)
   "presentation_1.aux"
   "presentation_1.pdf"

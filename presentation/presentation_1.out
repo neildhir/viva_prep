@@ -4,9 +4,4 @@
 \BOOKMARK [3][]{Outline0.1.3.5}{Low-level}{Outline0.1}% 4
 \BOOKMARK [2][]{Outline0.2}{Chapter III: Incidence detection [Perception layer]}{}% 5
 \BOOKMARK [2][]{Outline0.3}{Chapter IV: Dynamics identification via time-series segmentation [Perception layer]}{}% 6
-\BOOKMARK [2][]{Outline0.4}{State-space models}{}% 7
-\BOOKMARK [2][]{Outline0.5}{Bayesian nonparametrics + state-space models}{}% 8
-\BOOKMARK [2][]{Outline0.6}{Synthetic experiments}{}% 9
-\BOOKMARK [2][]{Outline0.7}{Labelling lion observations}{}% 10
-\BOOKMARK [3][]{Outline0.7.1.22}{What is the problem and why do we care?}{Outline0.7}% 11
-\BOOKMARK [2][]{Outline0.8}{Conclusion}{}% 12
+\BOOKMARK [2][]{Outline0.4}{Chapter V: Gaussian process regression for prosthesis control [Translation/Execution layer]}{}% 7
