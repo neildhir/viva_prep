@@ -1,0 +1,56 @@
+\begin{thebibliography}{8}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Aldous(1985)]{aldous1985exchangeability}
+David~J Aldous.
+\newblock \emph{Exchangeability and related topics}.
+\newblock Springer, 1985.
+
+\bibitem[Dhir and Wood(2014)]{dhir2014improved}
+Neil Dhir and Frank Wood.
+\newblock Improved activity recognition via kalman smoothing and multiclass
+  linear discriminant analysis.
+\newblock In \emph{Engineering in Medicine and Biology Society (EMBC), 2014
+  36th Annual International Conference of the IEEE}, pages 582--585. IEEE,
+  2014.
+
+\bibitem[Ferguson(1973)]{ferguson1973bayesian}
+Thomas~S Ferguson.
+\newblock A bayesian analysis of some nonparametric problems.
+\newblock \emph{The annals of statistics}, pages 209--230, 1973.
+
+\bibitem[Lu{\v{s}}trek and Kalu{\v{z}}a(2009)]{luvstrek2009fall}
+Mitja Lu{\v{s}}trek and Bo{\v{s}}tjan Kalu{\v{z}}a.
+\newblock Fall detection and activity recognition with machine learning.
+\newblock \emph{Informatica}, 33\penalty0 (2), 2009.
+
+\bibitem[Orbanz(2012)]{orbanz2012lecture}
+Peter Orbanz.
+\newblock Lecture notes on bayesian nonparametrics.
+\newblock \emph{Journal of Mathematical Psychology}, 56:\penalty0 1--12, 2012.
+
+\bibitem[Teh and Jordan(2010)]{teh2010hierarchical}
+Yee~Whye Teh and Michael~I Jordan.
+\newblock Hierarchical bayesian nonparametric models with applications.
+\newblock \emph{Bayesian nonparametrics}, 1, 2010.
+
+\bibitem[Teh et~al.(2012)Teh, Jordan, Beal, and Blei]{teh2012hierarchical}
+Yee~Whye Teh, Michael~I Jordan, Matthew~J Beal, and David~M Blei.
+\newblock Hierarchical dirichlet processes.
+\newblock \emph{Journal of the american statistical association}, 2012.
+
+\bibitem[Tucker et~al.(2015)Tucker, Olivier, Pagel, Bleuler, Bouri, Lambercy,
+  del R~Mill{\'a}n, Riener, Vallery, and Gassert]{tucker2015control}
+Michael~R Tucker, Jeremy Olivier, Anna Pagel, Hannes Bleuler, Mohamed Bouri,
+  Olivier Lambercy, Jos{\'e} del R~Mill{\'a}n, Robert Riener, Heike Vallery,
+  and Roger Gassert.
+\newblock Control strategies for active lower extremity prosthetics and
+  orthotics: a review.
+\newblock \emph{Journal of neuroengineering and rehabilitation}, 12\penalty0
+  (1):\penalty0 1, 2015.
+
+\end{thebibliography}

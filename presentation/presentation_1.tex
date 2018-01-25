@@ -78,7 +78,7 @@
 \usepackage{graphicx} 
 \usepackage{booktabs}
 \usepackage{amsmath,amssymb}
-\usepackage[numbers]{natbib}
+\usepackage[authoryear,round]{natbib}
 \usepackage{subfig}
 \usepackage[]{color}
 \newcommand{\bigCI}{\mathrel{\text{\scalebox{1.07}{$\perp\mkern-10mu\perp$}}}}
@@ -95,25 +95,25 @@ prosthesis control}
 
 \author
 {\texorpdfstring{
-Neil Dhir  \\
-\footnotesize Machine Learning Research Group [Osborne], Applied AI Laboratory [Posner] and (and Probabilistic Programming Group
-[Wood])
-\vspace{1.5cm}\\
-{\bfseries{Viva voce}}
-}% 
-%\institute{Viva voce} % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
-{} 
+        Neil Dhir  \\
+        \footnotesize Machine Learning Research Group [Osborne], Applied AI Laboratory [Posner] and (and Probabilistic Programming Group
+        [Wood])
+        \vspace{1.5cm}\\
+        {\bfseries{Viva voce}}
+    }% 
+    %\institute{Viva voce} % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+    {} 
 \date{\today}} % Date, can be changed to a custom date
 
 \begin{document}
 
 \begin{frame}[plain,noframenumbering]
-\titlepage % Print the title page as the first slide
+    \titlepage % Print the title page as the first slide
 \end{frame}
 
 \begin{frame}[plain,noframenumbering]
-\frametitle{Overview} % Table of contents slide, comment this block out to remove it
-\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+    \frametitle{Overview} % Table of contents slide, comment this block out to remove it
+    \tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
 \end{frame}
 
 %----------------------------------------------------------------------------------------
@@ -123,98 +123,161 @@ Neil Dhir  \\
 \section{Motivation}
 
 \begin{frame}[plain]
-\subsection{High-level}
-\frametitle{Motivation: high-level}
-\begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+    \subsection{High-level}
+    \frametitle{Motivation: high-level}
+    \begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
 
-\column{.5\textwidth} % Left column and width
-    \begin{itemize}
-        \item Multiple-sclerosis: severely affects and reduces mobility 
-        \item Diabetes: can give rise to complications e.g. heart disease, kidney disease
-            retinopathy (a complication which damages retina) and neuropathy. 
-        \item {\it Diabetes is the leading cause of amputation} 
-        \item Quality of living; activities of daily living such as locomotion
-    \end{itemize}
-\column{.5\textwidth} % Right column and width
-\begin{figure}[ht]
-    \subfloat[Parents]{\includegraphics[width=.7\textwidth]{figures/parents.jpg}}\\[-0em]
-\end{figure}
-\end{columns}
+        \column{.5\textwidth} % Left column and width
+        \begin{itemize}
+            \item Multiple-sclerosis: severely affects and reduces mobility 
+            \item Diabetes: can give rise to complications e.g. heart disease, kidney disease
+                retinopathy (a complication which damages retina) and neuropathy. 
+            \item {\it Diabetes is the leading cause of amputation} 
+            \item Quality of living through activities of daily living such as locomotion
+        \end{itemize}
+        \column{.5\textwidth} % Right column and width
+        \begin{figure}[ht]
+            \subfloat[Parents]{\includegraphics[width=.7\textwidth]{figures/parents.jpg}}\\[-0em]
+        \end{figure}
+    \end{columns}
 \end{frame}
 
 %------------------------------------------------
 
 
 \begin{frame}[plain]
-\subsection{Mid-level}
-\frametitle{Motivation: mid-level}
-\begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-
-\column{.5\textwidth} % Left column and width
-    \begin{itemize}
-        \item Multiple-sclerosis: severely affects and reduces mobility 
-        \item Diabetes: can give rise to complications e.g. heart disease, kidney disease
-            retinopathy (a complication which damages retina) and neuropathy. 
-        \item {\it Diabetes is the leading cause of amputation} 
-        \item Quality of living; activities of daily living such as locomotion
-    \end{itemize}
-\column{.5\textwidth} % Right column and width
-\begin{figure}[ht]
-    \subfloat[Parents]{\includegraphics[width=.7\textwidth]{figures/parents.jpg}}\\[-0em]
-\end{figure}
-\end{columns}
+    \subsection{Mid-level}
+    \frametitle{Motivation: mid-level}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.9\textwidth]{figures/tucker.png}
+        \caption{Generalised control framework for active prostheses and orthoses \citep{tucker2015control}.}
+    \end{figure}
 \end{frame}
 
 %------------------------------------------------
 
 \begin{frame}[plain,noframenumbering]
-    \subsection{Appropriate state-space modelling strategy for sequence modelling}
+    \subsection{Low-level}
+    \frametitle{Motivation: low-level}
+    \begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+        \column{.5\textwidth} % Left column and width
+        \begin{itemize}
+            \item Perception layer 
+                \begin{itemize}
+                    \item {\bf Chapter III:} Incidence detection 
+                    \item {\bf Chapter IV:} Dynamics identification via time-series segmentation
+                \end{itemize}
+            \item Translation/Execution layer 
+                \begin{itemize}
+                    \item {\bf Chapter V:} Gaussian process regression for prosthesis control 
+                \end{itemize}
+        \end{itemize}
 
-    \frametitle{Sequence modelling}
-    \begin{itemize}
-        \item Time-series labelling is laborious and subjective $\rightarrow$ use semi/un-supervised learning to support labelling exercise
-        \item Want to discover new behaviours $\rightarrow$ Bayesian nonparametrics might help 
-        \item Model structure still far from clear $\rightarrow$ probably need to iterate over models 
-        \item Great opportunity for \emph{probabilistic programming}
-    \end{itemize}
-    \vspace{-1em}
+        Three broad themes were addressed which fit into the control stratification proposed by
+        \citet{tucker2015control}.
+
+        \column{.5\textwidth} % Left column and width
+        \begin{figure}[ht]
+            \centering
+            \includegraphics[width=.9\textwidth]{figures/half-tucker.png}
+            \caption{Parts of a hierarchical controller \citep{tucker2015control}.}
+        \end{figure}
+    \end{columns}
+\end{frame}
+
+%------------------------------------------------
+
+\section{Chapter III: Incidence detection [Perception layer]}
+\begin{frame}[plain]
+    %\subsection{High-level}
+    \frametitle{Chapter III: Incidence detection [Perception layer]}
+    \begin{columns}[t] 
+        \column{.6\textwidth} % Left column and width
+        \fbox{
+            \begin{minipage}{7cm}
+                The purpose of the high-level control is to perceive the locomotive intent of the user through 
+                activity mode detection.
+            \end{minipage}
+        }
+        \begin{itemize}
+            \item Use standard discriminative and generative approaches for classification 
+            \item Demonstrate that popular original study by \citet{luvstrek2009fall} could be improved 
+            \item Missing data was in-painted using a generative model (Kalman smoother)
+            \item Dimensionality reduction operated upon complete data
+            \item Increased performance was demonstrated with this simple approach
+        \end{itemize}
+        \column{.4\textwidth} % Right column and width
+        \begin{figure}
+            \vspace{-1.5cm}
+            \centering
+            \includegraphics[width=1.1\textwidth]{/home/nd/cloud/thesis/figures/walking-stick-man.pdf}
+            \caption{Example of `walking' incidence \citep{dhir2014improved}.}
+        \end{figure}
+    \end{columns}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}[plain,noframenumbering]
+    \frametitle{Chapter III: Example observations}
     \begin{figure}
         \centering
-        \includegraphics[width=0.9\textwidth]{figures/PAPER-raw-data-figure.pdf}
-        \vspace{-0.5em}
-    \caption{one hour of raw data captured at 32Hz, containing a total of 115,200 multivariate readings, wherein tri-axial accelerometry $(\ddot{x},\ddot{y},\ddot{z})$ and magnetometer $(\mathbf{B}_x,\mathbf{B}_y,\mathbf{B}_z)$ observations are shown.}
+        \includegraphics[width=0.9\textwidth]{/home/nd/cloud/thesis/figures/luvstrek-data-plot.pdf}
+        \caption{Recordings made from an infrared motion capture system. Window shows marker
+trajectories of the coordinates of two (out of 12) markers attached to the bodies of three volunteers. The scenario depicted includes three activities, enacted in the following
+order: walking $\rightarrow$ falling $\rightarrow$ lying.}
     \end{figure}
-    
+\end{frame}
 
+%------------------------------------------------
+
+\begin{frame}[plain]
+    %\subsection{High-level}
+    \frametitle{Chapter III: Methods}
+    \begin{columns}[t] 
+        \column{.5\textwidth} % Left column and width
+        \begin{figure}
+            \centering
+            \includegraphics[width=1\textwidth]{figures/kalman.png}
+            \caption{Kalman smoothing.}
+        \end{figure}
+        \column{.5\textwidth} % Right column and width
+        \begin{figure}
+            \centering
+            \includegraphics[width=1\textwidth]{figures/MLDA.png}
+            \caption{Multiclass linear discriminant analysis}
+        \end{figure}
+    \end{columns}
 \end{frame}
 
 \section{Understanding animal behaviour from observations} 
 
 \begin{frame}[plain]
-\subsection{What is the problem and why do we care?}
-\frametitle{Understanding animal behaviour from observations} 
-\begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+    \subsection{What is the problem and why do we care?}
+    \frametitle{Understanding animal behaviour from observations} 
+    \begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
 
-\column{.5\textwidth} % Left column and width
+        \column{.5\textwidth} % Left column and width
 
-\begin{itemize}
-    \small
-    \item Oxford's zoologists have been tracking prides of lions for years 
-    \item Famous members include Cecil and Xanda (killed by trophy hunters in July, two years after Cecil)
-    \item Observations $(y \in \mathbb{R}^d, d\gg1)$ often sampled at years at a time, sometimes at very high frequencies 
-    \item Use of especially accelerometry is widespread within biotelemetry as a means of measuring an animal’s activity quantitatively
-    \item Biotelemetry is used as a means of classifying behaviour i.e. to \emph{understand} their ecology
-        %\item Animal accelerometer data allow ecologists to identify correlates and drivers of behaviour
-        %\item Use of accelerometers is widespread within biotelemetry as a means of measuring an animal’s activity quantitatively
-        %\item Recordings are sampled at a high temporal resolution, sometimes for years at a time, resulting in terabytes of data
-\end{itemize}
+        \begin{itemize}
+            \small
+        \item Oxford's zoologists have been tracking prides of lions for years 
+        \item Famous members include Cecil and Xanda (killed by trophy hunters in July, two years after Cecil)
+        \item Observations $(y \in \mathbb{R}^d, d\gg1)$ often sampled at years at a time, sometimes at very high frequencies 
+        \item Use of especially accelerometry is widespread within biotelemetry as a means of measuring an animal’s activity quantitatively
+        \item Biotelemetry is used as a means of classifying behaviour i.e. to \emph{understand} their ecology
+            %\item Animal accelerometer data allow ecologists to identify correlates and drivers of behaviour
+            %\item Use of accelerometers is widespread within biotelemetry as a means of measuring an animal’s activity quantitatively
+            %\item Recordings are sampled at a high temporal resolution, sometimes for years at a time, resulting in terabytes of data
+    \end{itemize}
 
-\column{.5\textwidth} % Right column and width
-\vspace{-2em}
-\begin{figure}[ht]
-    \subfloat[Puma. Not lion. Still has collar, so we're ok.]{\includegraphics[width=1.\textwidth]{figures/puma1.jpg}}\\[-0em]
-    \subfloat[Collared lions]{\includegraphics[width=1.\textwidth]{figures/lionCollar.jpg}}
-\end{figure}
+    \column{.5\textwidth} % Right column and width
+    \vspace{-2em}
+    \begin{figure}[ht]
+        \subfloat[Puma. Not lion. Still has collar, so we're ok.]{\includegraphics[width=1.\textwidth]{figures/puma1.jpg}}\\[-0em]
+        \subfloat[Collared lions]{\includegraphics[width=1.\textwidth]{figures/lionCollar.jpg}}
+    \end{figure}
 \end{columns}
 \end{frame}
 
@@ -235,9 +298,9 @@ Neil Dhir  \\
         \centering
         \includegraphics[width=0.9\textwidth]{figures/PAPER-raw-data-figure.pdf}
         \vspace{-0.5em}
-    \caption{one hour of raw data captured at 32Hz, containing a total of 115,200 multivariate readings, wherein tri-axial accelerometry $(\ddot{x},\ddot{y},\ddot{z})$ and magnetometer $(\mathbf{B}_x,\mathbf{B}_y,\mathbf{B}_z)$ observations are shown.}
+        \caption{one hour of raw data captured at 32Hz, containing a total of 115,200 multivariate readings, wherein tri-axial accelerometry $(\ddot{x},\ddot{y},\ddot{z})$ and magnetometer $(\mathbf{B}_x,\mathbf{B}_y,\mathbf{B}_z)$ observations are shown.}
     \end{figure}
-    
+
 
 \end{frame}
 
@@ -302,39 +365,39 @@ Neil Dhir  \\
     \frametitle{State space models}
 
     \begin{columns}
-    \column{0.5\textwidth}
-    {\bf Problems with HMMs}
-    \begin{enumerate}
-        \item Geometric state duration: $\mathbb{P}(d) = a^{d-1} (1-a)$ where $d$ denotes the duration of a given state and $a$ denotes the Markov transition probability of a self-transition
-        \item Number of latent states must be set a priori
-    \end{enumerate}
-    {\bf Solutions}
-    \begin{enumerate}
-        \item Employ explicit state duration HMMs e.g. EDHMM or HSMM
-        \item Use BNP to place an unbounded prior on the latent state cardinality
-    \end{enumerate}
-    \column{0.5\textwidth}
-    \begin{figure}
-        \subfloat[Vanilla HMM]{\includegraphics[width=0.8\textwidth]{figures/HMM.eps}}\\
-        \subfloat[BNP HMM (i.e. HDP-HMM)]{\includegraphics[width=0.8\textwidth]{figures/HDPHMM.eps}}\\
-    \caption{From vanilla to infinity.}
-    \end{figure}
-\end{columns}
-%    \begin{itemize}
-%\item For time-series: lose iid assumption, but need some dependence for statistical strength
-%\item Often use Markov assumption: every state only depends on previous
-%\item HMM has latent discrete state time-series with Markov property
-%    \begin{figure}
-%        \includegraphics[width=0.3\linewidth]{hmm.png}
-%        \caption{Hidden Markov model.}
-%    \end{figure}
-%\item Highly successful, but two main drawbacks, for our purposes:
-%    \begin{itemize}
-%        \item This gives geometric (in part. decreasing) duration distributions: inappropriate for our purposes, as need state persistence! $\rightarrow$ HSMM
-%        \item Number of states is set a priority $\rightarrow$ BNP
-%    \end{itemize}
-%\item HSMM mends first by tracking state and duration pair, keeping state fixed and decreasing duration until it hits 0, then sampling new state, then sampling new duration from some distribution
-%\end{itemize}
+        \column{0.5\textwidth}
+        {\bf Problems with HMMs}
+        \begin{enumerate}
+            \item Geometric state duration: $\mathbb{P}(d) = a^{d-1} (1-a)$ where $d$ denotes the duration of a given state and $a$ denotes the Markov transition probability of a self-transition
+            \item Number of latent states must be set a priori
+        \end{enumerate}
+        {\bf Solutions}
+        \begin{enumerate}
+            \item Employ explicit state duration HMMs e.g. EDHMM or HSMM
+            \item Use BNP to place an unbounded prior on the latent state cardinality
+        \end{enumerate}
+        \column{0.5\textwidth}
+        \begin{figure}
+            \subfloat[Vanilla HMM]{\includegraphics[width=0.8\textwidth]{figures/HMM.eps}}\\
+            \subfloat[BNP HMM (i.e. HDP-HMM)]{\includegraphics[width=0.8\textwidth]{figures/HDPHMM.eps}}\\
+            \caption{From vanilla to infinity.}
+        \end{figure}
+    \end{columns}
+    %    \begin{itemize}
+    %\item For time-series: lose iid assumption, but need some dependence for statistical strength
+    %\item Often use Markov assumption: every state only depends on previous
+    %\item HMM has latent discrete state time-series with Markov property
+    %    \begin{figure}
+    %        \includegraphics[width=0.3\linewidth]{hmm.png}
+    %        \caption{Hidden Markov model.}
+    %    \end{figure}
+    %\item Highly successful, but two main drawbacks, for our purposes:
+    %    \begin{itemize}
+    %        \item This gives geometric (in part. decreasing) duration distributions: inappropriate for our purposes, as need state persistence! $\rightarrow$ HSMM
+    %        \item Number of states is set a priority $\rightarrow$ BNP
+    %    \end{itemize}
+    %\item HSMM mends first by tracking state and duration pair, keeping state fixed and decreasing duration until it hits 0, then sampling new state, then sampling new duration from some distribution
+    %\end{itemize}
 
 \end{frame}
 
@@ -385,11 +448,11 @@ Neil Dhir  \\
         \item Infinite duration hidden Markov model (IDHMM) -- \emph{nonparametric state durations}
         \item Stateful IDHMM -- \emph{stateful nonparametric state and duration statistics} 
     \end{itemize}
-%    \begin{align*}
-   %     G_0 \mid \gamma,H_{\Theta} \sim \mathcal{DP}(\gamma,H_{\Theta}) \ &\wedge \ \textcolor{blue}{D_0 \mid \gamma',H_{\mathcal{D}} \sim \mathcal{DP}(\gamma',H_{\mathcal{D}})}\\
-   %     G_{\theta} \mid \alpha,G_0 \sim \mathcal{DP}(\alpha,G_0) \ &\wedge \  \textcolor{blue}{D_\theta \mid \alpha',D_0 \sim \mathcal{DP}(\alpha',D_0)}\\
-   %                                                                &\ \vdots\\
-   %\end{align*}
+    %    \begin{align*}
+    %     G_0 \mid \gamma,H_{\Theta} \sim \mathcal{DP}(\gamma,H_{\Theta}) \ &\wedge \ \textcolor{blue}{D_0 \mid \gamma',H_{\mathcal{D}} \sim \mathcal{DP}(\gamma',H_{\mathcal{D}})}\\
+    %     G_{\theta} \mid \alpha,G_0 \sim \mathcal{DP}(\alpha,G_0) \ &\wedge \  \textcolor{blue}{D_\theta \mid \alpha',D_0 \sim \mathcal{DP}(\alpha',D_0)}\\
+    %                                                                &\ \vdots\\
+    %\end{align*}
 \end{frame}
 
 
@@ -763,16 +826,6 @@ Neil Dhir  \\
 
 
 \fi
-%------------------------------------------------
-
-
-%\begin{frame}[plain,noframenumbering]
-%\frametitle{References}
-%\footnotesize
-%\bibliographystyle{plainnat}
-%\nocite{*}
-%\bibliography{talk}
-%\end{frame}
 
 %------------------------------------------------
 
@@ -784,6 +837,17 @@ Neil Dhir  \\
 \end{frame}
 
 %----------------------------------------------------------------------------------------
+
+\begin{frame}[plain,noframenumbering]
+    \frametitle{References}
+    \footnotesize
+    \bibliographystyle{plainnat}
+    \nocite{*}
+    \bibliography{talk}
+\end{frame}
+
+%------------------------------------------------
+
 
 
 
