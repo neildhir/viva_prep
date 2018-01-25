@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex presentation_1"] 1516901891 "presentation_1.aux" "presentation_1.bbl" "presentation_1" 1516901995
+["bibtex presentation_1"] 1516902399 "presentation_1.aux" "presentation_1.bbl" "presentation_1" 1516902402
   "/usr/share/texlive/texmf-dist/bibtex/bst/natbib/plainnat.bst" 1480098435 26816 ffe5423d2019860bad9f54bc402fac15 ""
-  "presentation_1.aux" 1516901995 10616 b5412a930de10df5f5a24cca53b550fb ""
+  "presentation_1.aux" 1516902402 10616 b5412a930de10df5f5a24cca53b550fb ""
   "presentation_1.bcf" 0 -1 0 ""
   "talk.bib" 1516890310 3492 71ce764561b8448645d4ec9d32ccdbcc ""
   (generated)
   "presentation_1.blg"
   "presentation_1.bbl"
-["pdflatex"] 1516901993 "presentation_1.tex" "presentation_1.pdf" "presentation_1" 1516901995
+["pdflatex"] 1516902399 "presentation_1.tex" "presentation_1.pdf" "presentation_1" 1516902402
   "/etc/texmf/web2c/texmf.cnf" 1510676721 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/nd/cloud/thesis/figures/LE-figures/ankle-angle-trajectories-time-subject-6.pdf" 1500575018 79919 6eb723ca6558b5bb6803c9b684dc1f5a ""
   "/home/nd/cloud/thesis/figures/LE-figures/gait-cycle-time-comparisson-Arnold-2.pdf" 1505649638 118086 05b4932ac05550ef682404f20e6d6866 ""
@@ -276,12 +276,12 @@
   "figures/stickyHDPHMM.eps" 1516788083 195180 b52d9794e3f2190624c516b244215713 ""
   "figures/tolpin-model.png" 1516889893 75154 784f3e8bca82c8a4d32f0a5d30cd6ed0 ""
   "figures/tucker.png" 1516871354 152554 67318807d203ec57d1361db7813ae06a ""
-  "presentation_1.aux" 1516901995 10616 b5412a930de10df5f5a24cca53b550fb ""
-  "presentation_1.bbl" 1516901891 3724 6857fb040dcdb514494e1cbd2b322b51 "bibtex presentation_1"
-  "presentation_1.nav" 1516901995 5543 01e1cbea864ed55e6807ebaeb93fd97e ""
-  "presentation_1.out" 1516901995 595 006eafbefa04f67a04f5ae8fce608e9a ""
+  "presentation_1.aux" 1516902402 10616 b5412a930de10df5f5a24cca53b550fb ""
+  "presentation_1.bbl" 1516902399 3724 6857fb040dcdb514494e1cbd2b322b51 "bibtex presentation_1"
+  "presentation_1.nav" 1516902402 5543 01e1cbea864ed55e6807ebaeb93fd97e ""
+  "presentation_1.out" 1516902402 595 006eafbefa04f67a04f5ae8fce608e9a ""
   "presentation_1.tex" 1516901993 44851 eb73f82dbc673223bd31bd8f52360915 ""
-  "presentation_1.toc" 1516901995 582 cc16a5b3b9802412a38b5c5b9a95c5b4 ""
+  "presentation_1.toc" 1516902402 582 cc16a5b3b9802412a38b5c5b9a95c5b4 ""
   (generated)
   "presentation_1.snm"
   "presentation_1.out"
