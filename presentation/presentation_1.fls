@@ -589,6 +589,12 @@ INPUT ./figures/PAPER-main-result-eps-converted-to.pdf
 INPUT figures/new-main-plot.pdf
 INPUT ./figures/new-main-plot.pdf
 INPUT ./figures/new-main-plot.pdf
+INPUT /home/nd/cloud/viva_prep/vanilla-ssm-inference/Hamming-distance-vanilla.pdf
+INPUT /home/nd/cloud/viva_prep/vanilla-ssm-inference/Hamming-distance-vanilla.pdf
+INPUT /home/nd/cloud/viva_prep/vanilla-ssm-inference/Hamming-distance-vanilla.pdf
+INPUT /home/nd/cloud/viva_prep/vanilla-ssm-inference/state-cardinality-vanilla.pdf
+INPUT /home/nd/cloud/viva_prep/vanilla-ssm-inference/state-cardinality-vanilla.pdf
+INPUT /home/nd/cloud/viva_prep/vanilla-ssm-inference/state-cardinality-vanilla.pdf
 OUTPUT presentation_1.nav
 OUTPUT presentation_1.toc
 OUTPUT presentation_1.snm
