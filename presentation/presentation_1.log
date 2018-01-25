@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.11.29)  25 JAN 2018 10:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.11.29)  25 JAN 2018 11:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -689,7 +689,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )) [2
 
 ]
-<figures/parents.jpg, id=123, 1606.0pt x 1600.98125pt>
+<figures/parents.jpg, id=124, 1606.0pt x 1600.98125pt>
 File: figures/parents.jpg Graphic file (type jpg)
 <use figures/parents.jpg>
 Package pdftex.def Info: figures/parents.jpg  used on input line 143. on input line 143.
@@ -697,27 +697,27 @@ Package pdftex.def Info: Requested size: 139.4179pt x 138.97644pt on input line 
  [3
 
  <./figures/parents.jpg>]
-<figures/tucker.png, id=129, 1425.325pt x 764.8575pt>
+<figures/tucker.png, id=130, 1425.325pt x 764.8575pt>
 File: figures/tucker.png Graphic file (type png)
 <use figures/tucker.png>
-Package pdftex.def Info: figures/tucker.png  used on input line 156. on input line 156.
-Package pdftex.def Info: Requested size: 358.50229pt x 192.36931pt on input line 156.
+Package pdftex.def Info: figures/tucker.png  used on input line 155. on input line 155.
+Package pdftex.def Info: Requested size: 358.50229pt x 192.36931pt on input line 155.
 
-Overfull \vbox (4.70392pt too high) detected at line 156
+Overfull \vbox (4.70392pt too high) detected at line 155
  []
 
 [4
 
  <./figures/tucker.png>]
-<figures/half-tucker.png, id=138, 720.6925pt x 697.60625pt>
+<figures/half-tucker.png, id=139, 720.6925pt x 697.60625pt>
 File: figures/half-tucker.png Graphic file (type png)
 <use figures/half-tucker.png>
-Package pdftex.def Info: figures/half-tucker.png  used on input line 187. on input line 187.
-Package pdftex.def Info: Requested size: 179.25114pt x 173.50697pt on input line 187.
+Package pdftex.def Info: figures/half-tucker.png  used on input line 186. on input line 186.
+Package pdftex.def Info: Requested size: 179.25114pt x 173.50697pt on input line 186.
  [5
 
  <./figures/half-tucker.png>]
-</home/nd/cloud/thesis/figures/walking-stick-man.pdf, id=146, pagebox=cropbox, 593.21625pt x 448.67625pt>
+</home/nd/cloud/thesis/figures/walking-stick-man.pdf, id=147, pagebox=cropbox, 593.21625pt x 448.67625pt>
 File: /home/nd/cloud/thesis/figures/walking-stick-man.pdf Graphic file (type pdf)
 <use /home/nd/cloud/thesis/figures/walking-stick-man.pdf>
 Package pdftex.def Info: /home/nd/cloud/thesis/figures/walking-stick-man.pdf  used on input line 218. on input line 218.
@@ -730,7 +730,7 @@ Overfull \hbox (15.93427pt too wide) in paragraph at lines 218--218
 [6
 
  </home/nd/cloud/thesis/figures/walking-stick-man.pdf>]
-</home/nd/cloud/thesis/figures/luvstrek-data-plot.pdf, id=179, pagebox=cropbox, 839.86736pt x 350.10033pt>
+</home/nd/cloud/thesis/figures/luvstrek-data-plot.pdf, id=180, pagebox=cropbox, 839.86736pt x 350.10033pt>
 File: /home/nd/cloud/thesis/figures/luvstrek-data-plot.pdf Graphic file (type pdf)
 <use /home/nd/cloud/thesis/figures/luvstrek-data-plot.pdf>
 Package pdftex.def Info: /home/nd/cloud/thesis/figures/luvstrek-data-plot.pdf  used on input line 231. on input line 231.
@@ -738,64 +738,127 @@ Package pdftex.def Info: Requested size: 358.50229pt x 149.44507pt on input line
  [7
 
  </home/nd/cloud/thesis/figures/luvstrek-data-plot.pdf>]
-<figures/kalman.png, id=209, 866.23625pt x 474.77374pt>
+<figures/kalman.png, id=210, 866.23625pt x 474.77374pt>
 File: figures/kalman.png Graphic file (type png)
 <use figures/kalman.png>
-Package pdftex.def Info: figures/kalman.png  used on input line 252. on input line 252.
-Package pdftex.def Info: Requested size: 199.1693pt x 109.15944pt on input line 252.
-<figures/MLDA.png, id=210, 764.8575pt x 692.5875pt>
+Package pdftex.def Info: figures/kalman.png  used on input line 254. on input line 254.
+Package pdftex.def Info: Requested size: 199.1693pt x 109.15944pt on input line 254.
+<figures/MLDA.png, id=213, 764.8575pt x 692.5875pt>
 File: figures/MLDA.png Graphic file (type png)
 <use figures/MLDA.png>
-Package pdftex.def Info: figures/MLDA.png  used on input line 252. on input line 252.
-Package pdftex.def Info: Requested size: 199.1693pt x 180.34326pt on input line 252.
+Package pdftex.def Info: figures/MLDA.png  used on input line 254. on input line 254.
+Package pdftex.def Info: Requested size: 179.25114pt x 162.31422pt on input line 254.
  [8
 
  <./figures/kalman.png> <./figures/MLDA.png>]
-Missing character: There is no â in font cmss10!
-Missing character: There is no € in font cmss10!
-Missing character: There is no ™ in font cmss10!
-<figures/puma1.jpg, id=216, 994.71625pt x 326.21875pt>
-File: figures/puma1.jpg Graphic file (type jpg)
-<use figures/puma1.jpg>
-Package pdftex.def Info: figures/puma1.jpg  used on input line 282. on input line 282.
-Package pdftex.def Info: Requested size: 199.1693pt x 65.31725pt on input line 282.
-<figures/lionCollar.jpg, id=217, 1552.80125pt x 903.375pt>
-File: figures/lionCollar.jpg Graphic file (type jpg)
-<use figures/lionCollar.jpg>
-Package pdftex.def Info: figures/lionCollar.jpg  used on input line 282. on input line 282.
-Package pdftex.def Info: Requested size: 199.1693pt x 115.85767pt on input line 282.
+Package epstopdf Info: Source file: </home/nd/cloud/thesis/figures/raw_class_all.eps>
+(epstopdf)                    date: 2017-09-27 15:07:34
+(epstopdf)                    size: 123893 bytes
+(epstopdf)             Output file: </home/nd/cloud/thesis/figures/raw_class_all-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-09-27 15:10:47
+(epstopdf)                    size: 14023 bytes
+(epstopdf)             Command: <repstopdf --outfile=/home/nd/cloud/thesis/figures/raw_class_all-eps-converted-to.pdf /home/nd/cloud/thesis/figures/raw_class_all.eps>
+(epstopdf)             \includegraphics on input line 275.
+Package epstopdf Info: Output file is already uptodate.
+</home/nd/cloud/thesis/figures/raw_class_all-eps-converted-to.pdf, id=223, pagebox=cropbox, 460.72125pt x 478.78876pt>
+File: /home/nd/cloud/thesis/figures/raw_class_all-eps-converted-to.pdf Graphic file (type pdf)
+<use /home/nd/cloud/thesis/figures/raw_class_all-eps-converted-to.pdf>
+Package pdftex.def Info: /home/nd/cloud/thesis/figures/raw_class_all-eps-converted-to.pdf  used on input line 275. on input line 275.
+Package pdftex.def Info: Requested size: 179.25114pt x 186.2739pt on input line 275.
+Package epstopdf Info: Source file: </home/nd/cloud/thesis/figures/dr_main.eps>
+(epstopdf)                    date: 2017-06-16 19:29:26
+(epstopdf)                    size: 126546 bytes
+(epstopdf)             Output file: </home/nd/cloud/thesis/figures/dr_main-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-16 19:29:26
+(epstopdf)                    size: 15315 bytes
+(epstopdf)             Command: <repstopdf --outfile=/home/nd/cloud/thesis/figures/dr_main-eps-converted-to.pdf /home/nd/cloud/thesis/figures/dr_main.eps>
+(epstopdf)             \includegraphics on input line 275.
+Package epstopdf Info: Output file is already uptodate.
+</home/nd/cloud/thesis/figures/dr_main-eps-converted-to.pdf, id=224, pagebox=cropbox, 460.72125pt x 478.78876pt>
+File: /home/nd/cloud/thesis/figures/dr_main-eps-converted-to.pdf Graphic file (type pdf)
+<use /home/nd/cloud/thesis/figures/dr_main-eps-converted-to.pdf>
+Package pdftex.def Info: /home/nd/cloud/thesis/figures/dr_main-eps-converted-to.pdf  used on input line 275. on input line 275.
+Package pdftex.def Info: Requested size: 179.25114pt x 186.2739pt on input line 275.
  [9
 
- <./figures/puma1.jpg> <./figures/lionCollar.jpg>]
-<figures/PAPER-raw-data-figure.pdf, id=226, pagebox=cropbox, 895.50018pt x 258.34702pt>
-File: figures/PAPER-raw-data-figure.pdf Graphic file (type pdf)
-<use figures/PAPER-raw-data-figure.pdf>
-Package pdftex.def Info: figures/PAPER-raw-data-figure.pdf  used on input line 305. on input line 305.
-Package pdftex.def Info: Requested size: 358.50229pt x 103.42763pt on input line 305.
- [10
+ </home/nd/cloud/thesis/figures/raw_class_all-eps-converted-to.pdf> </home/nd/cloud/thesis/figures/dr_main-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: </home/nd/cloud/thesis/figures/foo2_updates2.eps>
+(epstopdf)                    date: 2017-06-16 19:29:26
+(epstopdf)                    size: 115598 bytes
+(epstopdf)             Output file: </home/nd/cloud/thesis/figures/foo2_updates2-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-16 19:29:26
+(epstopdf)                    size: 10814 bytes
+(epstopdf)             Command: <repstopdf --outfile=/home/nd/cloud/thesis/figures/foo2_updates2-eps-converted-to.pdf /home/nd/cloud/thesis/figures/foo2_updates2.eps>
+(epstopdf)             \includegraphics on input line 301.
+Package epstopdf Info: Output file is already uptodate.
+</home/nd/cloud/thesis/figures/foo2_updates2-eps-converted-to.pdf, id=244, pagebox=cropbox, 357.335pt x 591.20876pt>
+File: /home/nd/cloud/thesis/figures/foo2_updates2-eps-converted-to.pdf Graphic file (type pdf)
+<use /home/nd/cloud/thesis/figures/foo2_updates2-eps-converted-to.pdf>
+Package pdftex.def Info: /home/nd/cloud/thesis/figures/foo2_updates2-eps-converted-to.pdf  used on input line 301. on input line 301.
+Package pdftex.def Info: Requested size: 99.58464pt x 164.7615pt on input line 301.
 
- <./figures/PAPER-raw-data-figure.pdf>]
+Overfull \vbox (2.09612pt too high) detected at line 301
+ []
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 310.
+[10
 
+ </home/nd/cloud/thesis/figures/foo2_updates2-eps-converted-to.pdf>]
+File: figures/tucker.png Graphic file (type png)
+<use figures/tucker.png>
+Package pdftex.def Info: figures/tucker.png  used on input line 312. on input line 312.
+Package pdftex.def Info: Requested size: 358.50229pt x 192.36931pt on input line 312.
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\rightarrow' on input line 310.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 310.
+Overfull \vbox (4.70392pt too high) detected at line 312
+ []
 
 [11
 
 ]
-<figures/hmm-anglican.png, id=267, 1202.4925pt x 602.25pt>
+Missing character: There is no â in font cmss10!
+Missing character: There is no € in font cmss10!
+Missing character: There is no ™ in font cmss10!
+<figures/puma1.jpg, id=266, 994.71625pt x 326.21875pt>
+File: figures/puma1.jpg Graphic file (type jpg)
+<use figures/puma1.jpg>
+Package pdftex.def Info: figures/puma1.jpg  used on input line 344. on input line 344.
+Package pdftex.def Info: Requested size: 199.1693pt x 65.31725pt on input line 344.
+<figures/lionCollar.jpg, id=267, 1552.80125pt x 903.375pt>
+File: figures/lionCollar.jpg Graphic file (type jpg)
+<use figures/lionCollar.jpg>
+Package pdftex.def Info: figures/lionCollar.jpg  used on input line 344. on input line 344.
+Package pdftex.def Info: Requested size: 199.1693pt x 115.85767pt on input line 344.
+ [12
+
+ <./figures/puma1.jpg> <./figures/lionCollar.jpg>]
+<figures/PAPER-raw-data-figure.pdf, id=276, pagebox=cropbox, 895.50018pt x 258.34702pt>
+File: figures/PAPER-raw-data-figure.pdf Graphic file (type pdf)
+<use figures/PAPER-raw-data-figure.pdf>
+Package pdftex.def Info: figures/PAPER-raw-data-figure.pdf  used on input line 367. on input line 367.
+Package pdftex.def Info: Requested size: 358.50229pt x 103.42763pt on input line 367.
+ [13
+
+ <./figures/PAPER-raw-data-figure.pdf>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 372.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\rightarrow' on input line 372.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 372.
+
+[14
+
+]
+<figures/hmm-anglican.png, id=314, 1202.4925pt x 602.25pt>
 File: figures/hmm-anglican.png Graphic file (type png)
 <use figures/hmm-anglican.png>
-Package pdftex.def Info: figures/hmm-anglican.png  used on input line 358. on input line 358.
-Package pdftex.def Info: Requested size: 159.333pt x 79.79314pt on input line 358.
- [12
+Package pdftex.def Info: figures/hmm-anglican.png  used on input line 420. on input line 420.
+Package pdftex.def Info: Requested size: 159.333pt x 79.79314pt on input line 420.
+ [15
 
  <./figures/hmm-anglican.png (PNG copy)>]
 Package epstopdf Info: Source file: <figures/HMM.eps>
@@ -805,13 +868,13 @@ Package epstopdf Info: Source file: <figures/HMM.eps>
 (epstopdf)                    date: 2018-01-24 10:11:35
 (epstopdf)                    size: 10266 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/HMM-eps-converted-to.pdf figures/HMM.eps>
-(epstopdf)             \includegraphics on input line 402.
+(epstopdf)             \includegraphics on input line 464.
 Package epstopdf Info: Output file is already uptodate.
-<figures/HMM-eps-converted-to.pdf, id=272, pagebox=cropbox, 179.67125pt x 59.22125pt>
+<figures/HMM-eps-converted-to.pdf, id=319, pagebox=cropbox, 179.67125pt x 59.22125pt>
 File: figures/HMM-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/HMM-eps-converted-to.pdf>
-Package pdftex.def Info: figures/HMM-eps-converted-to.pdf  used on input line 402. on input line 402.
-Package pdftex.def Info: Requested size: 159.33604pt x 52.52238pt on input line 402.
+Package pdftex.def Info: figures/HMM-eps-converted-to.pdf  used on input line 464. on input line 464.
+Package pdftex.def Info: Requested size: 159.33604pt x 52.52238pt on input line 464.
 Package epstopdf Info: Source file: <figures/HDPHMM.eps>
 (epstopdf)                    date: 2018-01-24 10:01:22
 (epstopdf)                    size: 194213 bytes
@@ -819,21 +882,21 @@ Package epstopdf Info: Source file: <figures/HDPHMM.eps>
 (epstopdf)                    date: 2018-01-24 10:01:22
 (epstopdf)                    size: 16956 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/HDPHMM-eps-converted-to.pdf figures/HDPHMM.eps>
-(epstopdf)             \includegraphics on input line 402.
+(epstopdf)             \includegraphics on input line 464.
 Package epstopdf Info: Output file is already uptodate.
-<figures/HDPHMM-eps-converted-to.pdf, id=273, pagebox=cropbox, 219.82124pt x 99.37125pt>
+<figures/HDPHMM-eps-converted-to.pdf, id=320, pagebox=cropbox, 219.82124pt x 99.37125pt>
 File: figures/HDPHMM-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/HDPHMM-eps-converted-to.pdf>
-Package pdftex.def Info: figures/HDPHMM-eps-converted-to.pdf  used on input line 402. on input line 402.
-Package pdftex.def Info: Requested size: 159.33604pt x 72.03093pt on input line 402.
- [13
+Package pdftex.def Info: figures/HDPHMM-eps-converted-to.pdf  used on input line 464. on input line 464.
+Package pdftex.def Info: Requested size: 159.33604pt x 72.03093pt on input line 464.
+ [16
 
  <./figures/HMM-eps-converted-to.pdf> <./figures/HDPHMM-eps-converted-to.pdf>]
-Overfull \hbox (5.87323pt too wide) in paragraph at lines 456--456
+Overfull \hbox (5.87323pt too wide) in paragraph at lines 518--518
 []  
  []
 
-[14
+[17
 
 ]
 Package epstopdf Info: Source file: <figures/HDPHMM.eps>
@@ -843,12 +906,12 @@ Package epstopdf Info: Source file: <figures/HDPHMM.eps>
 (epstopdf)                    date: 2018-01-24 10:01:22
 (epstopdf)                    size: 16956 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/HDPHMM-eps-converted-to.pdf figures/HDPHMM.eps>
-(epstopdf)             \includegraphics on input line 475.
+(epstopdf)             \includegraphics on input line 537.
 Package epstopdf Info: Output file is already uptodate.
 File: figures/HDPHMM-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/HDPHMM-eps-converted-to.pdf>
-Package pdftex.def Info: figures/HDPHMM-eps-converted-to.pdf  used on input line 475. on input line 475.
-Package pdftex.def Info: Requested size: 119.50279pt x 54.02054pt on input line 475.
+Package pdftex.def Info: figures/HDPHMM-eps-converted-to.pdf  used on input line 537. on input line 537.
+Package pdftex.def Info: Requested size: 119.50279pt x 54.02054pt on input line 537.
 Package epstopdf Info: Source file: <figures/stickyHDPHMM.eps>
 (epstopdf)                    date: 2018-01-24 10:01:23
 (epstopdf)                    size: 195180 bytes
@@ -856,13 +919,13 @@ Package epstopdf Info: Source file: <figures/stickyHDPHMM.eps>
 (epstopdf)                    date: 2018-01-24 10:11:35
 (epstopdf)                    size: 17256 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/stickyHDPHMM-eps-converted-to.pdf figures/stickyHDPHMM.eps>
-(epstopdf)             \includegraphics on input line 475.
+(epstopdf)             \includegraphics on input line 537.
 Package epstopdf Info: Output file is already uptodate.
-<figures/stickyHDPHMM-eps-converted-to.pdf, id=364, pagebox=cropbox, 219.82124pt x 99.37125pt>
+<figures/stickyHDPHMM-eps-converted-to.pdf, id=410, pagebox=cropbox, 219.82124pt x 99.37125pt>
 File: figures/stickyHDPHMM-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/stickyHDPHMM-eps-converted-to.pdf>
-Package pdftex.def Info: figures/stickyHDPHMM-eps-converted-to.pdf  used on input line 475. on input line 475.
-Package pdftex.def Info: Requested size: 119.50279pt x 54.02054pt on input line 475.
+Package pdftex.def Info: figures/stickyHDPHMM-eps-converted-to.pdf  used on input line 537. on input line 537.
+Package pdftex.def Info: Requested size: 119.50279pt x 54.02054pt on input line 537.
 Package epstopdf Info: Source file: <figures/statefulHDPHMM.eps>
 (epstopdf)                    date: 2018-01-24 10:01:23
 (epstopdf)                    size: 195312 bytes
@@ -870,13 +933,13 @@ Package epstopdf Info: Source file: <figures/statefulHDPHMM.eps>
 (epstopdf)                    date: 2018-01-24 10:11:35
 (epstopdf)                    size: 17269 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/statefulHDPHMM-eps-converted-to.pdf figures/statefulHDPHMM.eps>
-(epstopdf)             \includegraphics on input line 475.
+(epstopdf)             \includegraphics on input line 537.
 Package epstopdf Info: Output file is already uptodate.
-<figures/statefulHDPHMM-eps-converted-to.pdf, id=365, pagebox=cropbox, 219.82124pt x 113.42375pt>
+<figures/statefulHDPHMM-eps-converted-to.pdf, id=411, pagebox=cropbox, 219.82124pt x 113.42375pt>
 File: figures/statefulHDPHMM-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/statefulHDPHMM-eps-converted-to.pdf>
-Package pdftex.def Info: figures/statefulHDPHMM-eps-converted-to.pdf  used on input line 475. on input line 475.
-Package pdftex.def Info: Requested size: 119.50279pt x 61.6598pt on input line 475.
+Package pdftex.def Info: figures/statefulHDPHMM-eps-converted-to.pdf  used on input line 537. on input line 537.
+Package pdftex.def Info: Requested size: 119.50279pt x 61.6598pt on input line 537.
 Package epstopdf Info: Source file: <figures/HDPEDHMM.eps>
 (epstopdf)                    date: 2018-01-24 10:01:22
 (epstopdf)                    size: 232122 bytes
@@ -884,13 +947,13 @@ Package epstopdf Info: Source file: <figures/HDPEDHMM.eps>
 (epstopdf)                    date: 2018-01-24 10:01:22
 (epstopdf)                    size: 20841 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/HDPEDHMM-eps-converted-to.pdf figures/HDPEDHMM.eps>
-(epstopdf)             \includegraphics on input line 475.
+(epstopdf)             \includegraphics on input line 537.
 Package epstopdf Info: Output file is already uptodate.
-<figures/HDPEDHMM-eps-converted-to.pdf, id=366, pagebox=cropbox, 243.91125pt x 139.52126pt>
+<figures/HDPEDHMM-eps-converted-to.pdf, id=412, pagebox=cropbox, 243.91125pt x 139.52126pt>
 File: figures/HDPEDHMM-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/HDPEDHMM-eps-converted-to.pdf>
-Package pdftex.def Info: figures/HDPEDHMM-eps-converted-to.pdf  used on input line 475. on input line 475.
-Package pdftex.def Info: Requested size: 159.333pt x 91.14119pt on input line 475.
+Package pdftex.def Info: figures/HDPEDHMM-eps-converted-to.pdf  used on input line 537. on input line 537.
+Package pdftex.def Info: Requested size: 159.333pt x 91.14119pt on input line 537.
 Package epstopdf Info: Source file: <figures/stateful-HDPEDHMM-v2.eps>
 (epstopdf)                    date: 2018-01-24 10:01:23
 (epstopdf)                    size: 246286 bytes
@@ -898,40 +961,40 @@ Package epstopdf Info: Source file: <figures/stateful-HDPEDHMM-v2.eps>
 (epstopdf)                    date: 2018-01-24 10:11:35
 (epstopdf)                    size: 21812 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/stateful-HDPEDHMM-v2-eps-converted-to.pdf figures/stateful-HDPEDHMM-v2.eps>
-(epstopdf)             \includegraphics on input line 475.
+(epstopdf)             \includegraphics on input line 537.
 Package epstopdf Info: Output file is already uptodate.
-<figures/stateful-HDPEDHMM-v2-eps-converted-to.pdf, id=367, pagebox=cropbox, 251.94125pt x 139.52126pt>
+<figures/stateful-HDPEDHMM-v2-eps-converted-to.pdf, id=413, pagebox=cropbox, 251.94125pt x 139.52126pt>
 File: figures/stateful-HDPEDHMM-v2-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/stateful-HDPEDHMM-v2-eps-converted-to.pdf>
-Package pdftex.def Info: figures/stateful-HDPEDHMM-v2-eps-converted-to.pdf  used on input line 475. on input line 475.
-Package pdftex.def Info: Requested size: 159.333pt x 88.23521pt on input line 475.
+Package pdftex.def Info: figures/stateful-HDPEDHMM-v2-eps-converted-to.pdf  used on input line 537. on input line 537.
+Package pdftex.def Info: Requested size: 159.333pt x 88.23521pt on input line 537.
 
-Overfull \vbox (5.18558pt too high) detected at line 475
+Overfull \vbox (5.18558pt too high) detected at line 537
  []
 
-[15
+[18
 
  <./figures/stickyHDPHMM-eps-converted-to.pdf> <./figures/statefulHDPHMM-eps-converted-to.pdf> <./figures/HDPEDHMM-eps-converted-to.pdf> <./figures/stateful-HDPEDHMM-v2-eps-converted-to.pdf>]
-<figures/PAPER-synthetic-data.pdf, id=582, pagebox=cropbox, 496.12326pt x 459.22803pt>
+<figures/PAPER-synthetic-data.pdf, id=629, pagebox=cropbox, 496.12326pt x 459.22803pt>
 File: figures/PAPER-synthetic-data.pdf Graphic file (type pdf)
 <use figures/PAPER-synthetic-data.pdf>
-Package pdftex.def Info: figures/PAPER-synthetic-data.pdf  used on input line 510. on input line 510.
-Package pdftex.def Info: Requested size: 131.45245pt x 121.67381pt on input line 510.
-<figures/Hamming-distance.pdf, id=583, pagebox=cropbox, 416.14177pt x 394.75664pt>
+Package pdftex.def Info: figures/PAPER-synthetic-data.pdf  used on input line 572. on input line 572.
+Package pdftex.def Info: Requested size: 131.45245pt x 121.67381pt on input line 572.
+<figures/Hamming-distance.pdf, id=630, pagebox=cropbox, 416.14177pt x 394.75664pt>
 File: figures/Hamming-distance.pdf Graphic file (type pdf)
 <use figures/Hamming-distance.pdf>
-Package pdftex.def Info: figures/Hamming-distance.pdf  used on input line 510. on input line 510.
-Package pdftex.def Info: Requested size: 131.45245pt x 124.69232pt on input line 510.
-<figures/state-cardinality.pdf, id=584, pagebox=cropbox, 401.45442pt x 394.75664pt>
+Package pdftex.def Info: figures/Hamming-distance.pdf  used on input line 572. on input line 572.
+Package pdftex.def Info: Requested size: 131.45245pt x 124.69232pt on input line 572.
+<figures/state-cardinality.pdf, id=631, pagebox=cropbox, 401.45442pt x 394.75664pt>
 File: figures/state-cardinality.pdf Graphic file (type pdf)
 <use figures/state-cardinality.pdf>
-Package pdftex.def Info: figures/state-cardinality.pdf  used on input line 510. on input line 510.
-Package pdftex.def Info: Requested size: 131.45245pt x 129.25813pt on input line 510.
+Package pdftex.def Info: figures/state-cardinality.pdf  used on input line 572. on input line 572.
+Package pdftex.def Info: Requested size: 131.45245pt x 129.25813pt on input line 572.
 
-Overfull \vbox (0.55524pt too high) detected at line 510
+Overfull \vbox (0.55524pt too high) detected at line 572
  []
 
-[16
+[19
 
  <./figures/PAPER-synthetic-data.pdf> <./figures/Hamming-distance.pdf
 
@@ -940,22 +1003,22 @@ pdfTeX warning: pdflatex (file ./figures/Hamming-distance.pdf): PDF inclusion: m
 
 pdfTeX warning: pdflatex (file ./figures/state-cardinality.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<figures/PAPER-duration-distributions.pdf, id=683, pagebox=cropbox, 393.34091pt x 394.75664pt>
+<figures/PAPER-duration-distributions.pdf, id=730, pagebox=cropbox, 393.34091pt x 394.75664pt>
 File: figures/PAPER-duration-distributions.pdf Graphic file (type pdf)
 <use figures/PAPER-duration-distributions.pdf>
-Package pdftex.def Info: figures/PAPER-duration-distributions.pdf  used on input line 520. on input line 520.
-Package pdftex.def Info: Requested size: 131.45245pt x 131.92654pt on input line 520.
-<figures/gaussian-durations.pdf, id=684, pagebox=cropbox, 416.14177pt x 394.75664pt>
+Package pdftex.def Info: figures/PAPER-duration-distributions.pdf  used on input line 582. on input line 582.
+Package pdftex.def Info: Requested size: 131.45245pt x 131.92654pt on input line 582.
+<figures/gaussian-durations.pdf, id=731, pagebox=cropbox, 416.14177pt x 394.75664pt>
 File: figures/gaussian-durations.pdf Graphic file (type pdf)
 <use figures/gaussian-durations.pdf>
-Package pdftex.def Info: figures/gaussian-durations.pdf  used on input line 520. on input line 520.
-Package pdftex.def Info: Requested size: 131.45245pt x 124.69232pt on input line 520.
-<figures/poisson-durations.pdf, id=685, pagebox=cropbox, 416.14177pt x 394.75664pt>
+Package pdftex.def Info: figures/gaussian-durations.pdf  used on input line 582. on input line 582.
+Package pdftex.def Info: Requested size: 131.45245pt x 124.69232pt on input line 582.
+<figures/poisson-durations.pdf, id=732, pagebox=cropbox, 416.14177pt x 394.75664pt>
 File: figures/poisson-durations.pdf Graphic file (type pdf)
 <use figures/poisson-durations.pdf>
-Package pdftex.def Info: figures/poisson-durations.pdf  used on input line 520. on input line 520.
-Package pdftex.def Info: Requested size: 131.45245pt x 124.69232pt on input line 520.
- [17
+Package pdftex.def Info: figures/poisson-durations.pdf  used on input line 582. on input line 582.
+Package pdftex.def Info: Requested size: 131.45245pt x 124.69232pt on input line 582.
+ [20
 
  <./figures/PAPER-duration-distributions.pdf> <./figures/gaussian-durations.pdf
 
@@ -964,12 +1027,12 @@ pdfTeX warning: pdflatex (file ./figures/gaussian-durations.pdf): PDF inclusion:
 
 pdfTeX warning: pdflatex (file ./figures/poisson-durations.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<figures/speaker.png, id=771, 2007.5pt x 2007.5pt>
+<figures/speaker.png, id=818, 2007.5pt x 2007.5pt>
 File: figures/speaker.png Graphic file (type png)
 <use figures/speaker.png>
-Package pdftex.def Info: figures/speaker.png  used on input line 535. on input line 535.
-Package pdftex.def Info: Requested size: 119.50279pt x 119.49521pt on input line 535.
- [18
+Package pdftex.def Info: figures/speaker.png  used on input line 597. on input line 597.
+Package pdftex.def Info: Requested size: 119.50279pt x 119.49521pt on input line 597.
+ [21
 
  <./figures/speaker.png>]
 Package epstopdf Info: Source file: <figures/PAPER-main-result.eps>
@@ -979,32 +1042,32 @@ Package epstopdf Info: Source file: <figures/PAPER-main-result.eps>
 (epstopdf)                    date: 2018-01-24 10:01:23
 (epstopdf)                    size: 474513 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/PAPER-main-result-eps-converted-to.pdf figures/PAPER-main-result.eps>
-(epstopdf)             \includegraphics on input line 547.
+(epstopdf)             \includegraphics on input line 609.
 Package epstopdf Info: Output file is already uptodate.
-<figures/PAPER-main-result-eps-converted-to.pdf, id=778, pagebox=cropbox, 924.45375pt x 487.8225pt>
+<figures/PAPER-main-result-eps-converted-to.pdf, id=826, pagebox=cropbox, 924.45375pt x 487.8225pt>
 File: figures/PAPER-main-result-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/PAPER-main-result-eps-converted-to.pdf>
-Package pdftex.def Info: figures/PAPER-main-result-eps-converted-to.pdf  used on input line 547. on input line 547.
-Package pdftex.def Info: Requested size: 366.47076pt x 193.38374pt on input line 547.
+Package pdftex.def Info: figures/PAPER-main-result-eps-converted-to.pdf  used on input line 609. on input line 609.
+Package pdftex.def Info: Requested size: 366.47076pt x 193.38374pt on input line 609.
 
-Overfull \vbox (12.24335pt too high) detected at line 547
+Overfull \vbox (12.24335pt too high) detected at line 609
  []
 
-[19
+[22
 
  <./figures/PAPER-main-result-eps-converted-to.pdf>]
-<figures/new-main-plot.pdf, id=799, pagebox=cropbox, 714.25757pt x 313.81076pt>
+<figures/new-main-plot.pdf, id=846, pagebox=cropbox, 714.25757pt x 313.81076pt>
 File: figures/new-main-plot.pdf Graphic file (type pdf)
 <use figures/new-main-plot.pdf>
-Package pdftex.def Info: figures/new-main-plot.pdf  used on input line 556. on input line 556.
-Package pdftex.def Info: Requested size: 398.3386pt x 175.00978pt on input line 556.
+Package pdftex.def Info: figures/new-main-plot.pdf  used on input line 618. on input line 618.
+Package pdftex.def Info: Requested size: 398.3386pt x 175.00978pt on input line 618.
 
-Overfull \vbox (11.34439pt too high) detected at line 556
+Overfull \vbox (11.34439pt too high) detected at line 618
  []
 
-[20
+[23
 
- <./figures/new-main-plot.pdf>] [21
+ <./figures/new-main-plot.pdf>] [24
 
 ]
 Package epstopdf Info: Source file: <figures/lion.eps>
@@ -1014,16 +1077,20 @@ Package epstopdf Info: Source file: <figures/lion.eps>
 (epstopdf)                    date: 2018-01-24 10:01:22
 (epstopdf)                    size: 114477 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/lion-eps-converted-to.pdf figures/lion.eps>
-(epstopdf)             \includegraphics on input line 837.
+(epstopdf)             \includegraphics on input line 899.
 Package epstopdf Info: Output file is already uptodate.
-<figures/lion-eps-converted-to.pdf, id=834, pagebox=cropbox, 231.86626pt x 171.64125pt>
+<figures/lion-eps-converted-to.pdf, id=880, pagebox=cropbox, 231.86626pt x 171.64125pt>
 File: figures/lion-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/lion-eps-converted-to.pdf>
-Package pdftex.def Info: figures/lion-eps-converted-to.pdf  used on input line 837. on input line 837.
-Package pdftex.def Info: Requested size: 199.1693pt x 147.44095pt on input line 837.
- [22
+Package pdftex.def Info: figures/lion-eps-converted-to.pdf  used on input line 899. on input line 899.
+Package pdftex.def Info: Requested size: 199.1693pt x 147.44095pt on input line 899.
+ [25
 
- <./figures/lion-eps-converted-to.pdf>] (./presentation_1.bbl) [23
+ <./figures/lion-eps-converted-to.pdf>] (./presentation_1.bbl)
+Overfull \vbox (6.83461pt too high) detected at line 909
+ []
+
+[26
 
 ]
 \tf@nav=\write6
@@ -1035,27 +1102,27 @@ Package pdftex.def Info: Requested size: 199.1693pt x 147.44095pt on input line 
 \tf@snm=\write8
 \openout8 = `presentation_1.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 854.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 854.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 916.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 916.
  (./presentation_1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 854.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 854.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 916.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 916.
 Package rerunfilecheck Info: File `presentation_1.out' has not changed.
-(rerunfilecheck)             Checksum: B53B2363483F9562B26A573BEDA0BB2E;1125.
+(rerunfilecheck)             Checksum: 51FC2FF453C8DDBFC752C192514A79EC;1126.
  ) 
 Here is how much of TeX's memory you used:
- 18801 strings out of 494936
- 356864 string characters out of 6180918
- 422430 words of memory out of 5000000
- 21575 multiletter control sequences out of 15000+600000
+ 18836 strings out of 494936
+ 358113 string characters out of 6180918
+ 422481 words of memory out of 5000000
+ 21599 multiletter control sequences out of 15000+600000
  15923 words of font info for 59 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  48i,12n,60p,845b,788s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on presentation_1.pdf (23 pages, 3000291 bytes).
+Output written on presentation_1.pdf (26 pages, 3017021 bytes).
 PDF statistics:
- 933 PDF objects out of 1000 (max. 8388607)
- 651 compressed objects within 7 object streams
- 72 named destinations out of 1000 (max. 500000)
- 306 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 983 PDF objects out of 1000 (max. 8388607)
+ 691 compressed objects within 7 object streams
+ 80 named destinations out of 1000 (max. 500000)
+ 321 words of extra memory for PDF output out of 10000 (max. 10000000)
 

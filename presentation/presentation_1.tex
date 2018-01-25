@@ -144,7 +144,6 @@ prosthesis control}
 
 %------------------------------------------------
 
-
 \begin{frame}[plain]
     \subsection{Mid-level}
     \frametitle{Motivation: mid-level}
@@ -200,6 +199,7 @@ prosthesis control}
                 activity mode detection.
             \end{minipage}
         }
+        \vspace{0.3cm}
         \begin{itemize}
             \item Use standard discriminative and generative approaches for classification 
             \item Demonstrate that popular original study by \citet{luvstrek2009fall} could be improved 
@@ -240,18 +240,80 @@ order: walking $\rightarrow$ falling $\rightarrow$ lying.}
         \begin{figure}
             \centering
             \includegraphics[width=1\textwidth]{figures/kalman.png}
-            \caption{Kalman smoothing.}
+            \caption{Kalman smoothing to estimate trajectory; with \textcolor{green}{observations},
+                \textcolor{red}{ground truth} and \textcolor{blue}{estimates} \citep{barber2012bayesian}.}
         \end{figure}
         \column{.5\textwidth} % Right column and width
         \begin{figure}
             \centering
-            \includegraphics[width=1\textwidth]{figures/MLDA.png}
-            \caption{Multiclass linear discriminant analysis}
+            \includegraphics[width=.9\textwidth]{figures/MLDA.png}
+            \caption{Multiclass linear discriminant analysis of a two-dimensional demonstration space
+            \citep{Bishop:2006:PRM:1162264}.}
         \end{figure}
     \end{columns}
 \end{frame}
 
+%------------------------------------------------
+
+\begin{frame}[plain]
+    %\subsection{High-level}
+    \frametitle{Chapter III: Results}
+    \begin{columns}[t] 
+        \column{.5\textwidth} % Left column and width
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.9\textwidth]{/home/nd/cloud/thesis/figures/raw_class_all.eps}
+            \caption{Methods applied to raw data.}
+        \end{figure}
+        \column{.5\textwidth} % Right column and width
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.9\textwidth]{/home/nd/cloud/thesis/figures/dr_main.eps}
+            \caption{Methods applied to feature vectors.}
+        \end{figure}
+    \end{columns}
+\end{frame}
 \section{Understanding animal behaviour from observations} 
+
+%------------------------------------------------
+
+\begin{frame}[plain]
+    %\subsection{High-level}
+    \frametitle{Chapter III: Conclusions}
+    \begin{columns}[t] 
+        \column{.5\textwidth} % Left column and width
+        \begin{itemize}
+            \item Able to significantly improve {\bf supervised} classification performance using very simple, off-the-shelf, tools 
+            \item In-painting proved valuable to complete the dataset
+            \item Though complete, the dataset also has lots of redundancy, removed through dimensionality reduction
+                (DR)
+            \item DR was the primary driver of improved performance
+            \item Additional experiments investigated information content of individual tags (see RHS figure)
+        \end{itemize}
+        \column{.5\textwidth} % Right column and width
+        \begin{figure}
+            \centering
+            \includegraphics[width=.5\textwidth]{/home/nd/cloud/thesis/figures/foo2_updates2.eps}
+            \caption{Illustration of activity, with best individual tag classification
+accuracy quoted with each tag \citep{dhir2014improved}.}
+        \end{figure}
+    \end{columns}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}[plain]
+    \frametitle{Reminder: Where are we now in the control hierarchy?}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.9\textwidth]{figures/tucker.png}
+        \caption{Generalised control framework for active prostheses and orthoses \citep{tucker2015control}.}
+    \end{figure}
+\end{frame}
+
+
+
+
 
 \begin{frame}[plain]
     \subsection{What is the problem and why do we care?}

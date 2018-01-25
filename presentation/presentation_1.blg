@@ -3,44 +3,44 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: presentation_1.aux
 The style file: plainnat.bst
 Database file #1: talk.bib
-You've used 8 entries,
+You've used 10 entries,
             2773 wiz_defined-function locations,
-            642 strings with 6301 characters,
-and the built_in function-call counts, 3743 in all, are:
-= -- 328
-> -- 225
-< -- 8
-+ -- 77
-- -- 69
-* -- 276
-:= -- 583
-add.period$ -- 25
-call.type$ -- 8
-change.case$ -- 46
-chr.to.int$ -- 8
-cite$ -- 16
-duplicate$ -- 180
-empty$ -- 294
-format.name$ -- 83
-if$ -- 787
+            654 strings with 6603 characters,
+and the built_in function-call counts, 4344 in all, are:
+= -- 376
+> -- 245
+< -- 10
++ -- 85
+- -- 75
+* -- 308
+:= -- 683
+add.period$ -- 32
+call.type$ -- 10
+change.case$ -- 52
+chr.to.int$ -- 10
+cite$ -- 20
+duplicate$ -- 220
+empty$ -- 358
+format.name$ -- 91
+if$ -- 913
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 9
-newline$ -- 48
-num.names$ -- 32
-pop$ -- 95
+missing$ -- 13
+newline$ -- 59
+num.names$ -- 40
+pop$ -- 117
 preamble$ -- 1
-purify$ -- 39
+purify$ -- 45
 quote$ -- 0
-skip$ -- 150
+skip$ -- 174
 stack$ -- 0
-substring$ -- 99
-swap$ -- 27
+substring$ -- 103
+swap$ -- 29
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 83
+type$ -- 95
 warning$ -- 0
-while$ -- 33
+while$ -- 39
 width$ -- 0
-write$ -- 110
+write$ -- 137

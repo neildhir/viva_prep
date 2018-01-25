@@ -1,14 +1,17 @@
 # Fdb version 3
-["bibtex presentation_1"] 1516877352 "presentation_1.aux" "presentation_1.bbl" "presentation_1" 1516877897
+["bibtex presentation_1"] 1516881363 "presentation_1.aux" "presentation_1.bbl" "presentation_1" 1516881365
   "/usr/share/texlive/texmf-dist/bibtex/bst/natbib/plainnat.bst" 1480098435 26816 ffe5423d2019860bad9f54bc402fac15 ""
-  "presentation_1.aux" 1516877897 9688 44c5c78483396d45e08c9cf51fbd58a1 ""
+  "presentation_1.aux" 1516881364 10440 7a2a768c276c7857f401e370d782ca08 ""
   "presentation_1.bcf" 0 -1 0 ""
-  "talk.bib" 1516876032 2185 3887050a543753ae0bfc526326d0c675 ""
+  "talk.bib" 1516879785 2625 e9be4361cb2d10439c58f27c0640b3fd ""
   (generated)
   "presentation_1.bbl"
-["pdflatex"] 1516877896 "presentation_1.tex" "presentation_1.pdf" "presentation_1" 1516877897
+["pdflatex"] 1516881363 "presentation_1.tex" "presentation_1.pdf" "presentation_1" 1516881365
   "/etc/texmf/web2c/texmf.cnf" 1510676721 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/nd/cloud/thesis/figures/dr_main.eps" 1497637766 126546 deb23cb61dc33c0a616185da2adfb291 ""
+  "/home/nd/cloud/thesis/figures/foo2_updates2.eps" 1497637766 115598 c6f8eef8faffe3cf46d6e542d39432ec ""
   "/home/nd/cloud/thesis/figures/luvstrek-data-plot.pdf" 1507283203 129742 4aab23800d5b407295e3c72ad1d6a716 ""
+  "/home/nd/cloud/thesis/figures/raw_class_all.eps" 1506521254 123893 b782dc1713cc0e6586c5eccccc9e21b9 ""
   "/home/nd/cloud/thesis/figures/walking-stick-man.pdf" 1504729126 22489 27d36b0e2746f67cba6bef956a26ede9 ""
   "/home/nd/texmf/tex/latex/caption/caption.sty" 1480098823 66233 8b81cfab95a1f8fc2f0f6c89415b087a ""
   "/home/nd/texmf/tex/latex/caption/caption3.sty" 1480098823 64866 1ea74c5f2d1685881497f021b8f186b2 ""
@@ -245,12 +248,12 @@
   "figures/statefulHDPHMM.eps" 1516788083 195312 995eeec97b2cdd60ea2092f4dc41e366 ""
   "figures/stickyHDPHMM.eps" 1516788083 195180 b52d9794e3f2190624c516b244215713 ""
   "figures/tucker.png" 1516871354 152554 67318807d203ec57d1361db7813ae06a ""
-  "presentation_1.aux" 1516877897 9688 44c5c78483396d45e08c9cf51fbd58a1 ""
-  "presentation_1.bbl" 1516877352 2378 6b81719a629b1c81a69fd5680ba236cf "bibtex presentation_1"
-  "presentation_1.nav" 1516877897 5166 888cc7372353804be6df4aac24b09c1d ""
-  "presentation_1.out" 1516877897 1125 b53b2363483f9562b26a573beda0bb2e ""
-  "presentation_1.tex" 1516877895 33462 7c3011a05fe2cee84041b53b70887bd8 ""
-  "presentation_1.toc" 1516877897 1095 94a408d5299c61ff05f0dcce4c01b041 ""
+  "presentation_1.aux" 1516881364 10440 7a2a768c276c7857f401e370d782ca08 ""
+  "presentation_1.bbl" 1516881363 2803 bc9482d3a061519fe82915f1919780fb "bibtex presentation_1"
+  "presentation_1.nav" 1516881364 5450 144c7513fe55080bf7a37a507eba3b6f ""
+  "presentation_1.out" 1516881364 1126 51fc2ff453c8ddbfc752c192514a79ec ""
+  "presentation_1.tex" 1516881360 36046 be5b72d1e49c88383b6f7e219e0b0b04 ""
+  "presentation_1.toc" 1516881364 1097 958bb4c9f068c667008fd9ea557aae10 ""
   (generated)
   "presentation_1.pdf"
   "presentation_1.toc"
