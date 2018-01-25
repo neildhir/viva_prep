@@ -1,0 +1,107 @@
+==1. Lions/Accelerometers in Ecology Intro==
+Oxford Zoology has lots of lion data. (And badgers!) Think of Cecil and his son.
+
+Accelerometer data can be very useful for tracking animal behaviour, but difficult to process: big data.
+
+Note: accelerometer data is non-iid - want to assign a time series of behaviours. (For instance, if the lion sleeps at time t, it very likely sleeps as well at time t+1. So the measurements at t and t+1 are strongly correlated.
+Very non-geometric duration distributions, so HMM won't work. (For instance, if a human starts sleeping, we expect her to sleep for roughly 7-8 hours, rather than wake up after 1 min. This is incompatible with geometric duration distribution, which is monotonically decreasing after all.)
+Want to discover new behaviours, so BNP is tempting.
+Labeling is expensive. So only have coarse ground truth.
+Moreover, many different interpretations and level of detail in labeling are possible + behaviour can have multiple dimensions: e.g. hunting while panting vs lying down while panting.
+Idea: use un/semi-supervised learning to suggest areas of interest to examine for creating/refining ground truth. 
+Ideal model structure is still far from clear.
+Big data, but not intractibly big.
+--> gives good opportunity for applying PP.
+
+
+
+figure: lions informal
+
+==2. Probprog==
+What is probprog?
+Roughly (will use inclusive definition in this talk), language for probabilistic modelling and inference (Bayesian stats!).
+Separate inference and modelling.
+Use general purpose inference.
+Effectively: compiler provides range of techniques for performing high dimensional integration that is crucial step of inference.
+
+Why care?
+Make complex statistical modelling/ML available to non-experts.
+(Modelling is easy - inference is hard, for them.)
+Lets the user think about what they're computing, rather than how they're computing it.
+Computing power will increase, human brain power won't (as much). --> scientist's time will be more important consideration than compute time --> Price of general purpose inference (more computationally expensive) will be worth it, in fact already is often.
+Move away from classical stats, only relying on Gaussians etc, to complex statistical models, e.g. motivated by domain knowledge.
+Mix stats methods seemlessly with those from classical computer science: rich data structures (e.g. distributions over trees), higher-order functions (e.g. recursion, map, reduce).
+Example: density functions involving solving system of ODEs.
+Very easy to go from unsupervised to (semi-)supervised.
+
+Great for our application, to quickly iterate over different models.
+
+==3. PPLs==
+Stan (Smooth densities, HMC)
+PyMC3 ()
+
+Church/Venture/Anglican (Turing complete, higher-order functions, functional language, allows BNP, SMC, MCMC methods)
+
+BUGS (DAGS, MCMC methods?)
+
+Infer.NET (DAGS + exponential families?, analytic inference for conjugate priors, message passing algorithms for approximate inference like [EP, BP, Variational Bayes])
+
+Cf. TF - Edward? (for optimisation rather than integration, so suited for frequentist inference or variational Bayesian inference)
+
+Figure: example Anglican code.
+
+
+==4. SSMs==
+Lots of statistics is iid.
+Contrast with models for time series data.
+...->(0)->(1)->(2)->...   (this still has Markov assumption; fully general would have all arrows from (i) to (j) if i<j)
+      |    |    |
+	  v    v    v 
+	 (a)  (b)  (c)
+instead of 
+...  (0)  (1)  (2)  ...
+      |    |    |
+	  v    v    v 
+	 (a)  (b)  (c).
+Here: relax independence assumption to a weak form of temporal dependence. (Need some form of independence for statistical strength.)
+Class of those models are SSMs.
+[something about ssms... or maybe we should just avoid the term SSM as it can be slightly confusing. presumably we mean by it the graphical model structure above. I guess the EDHMM has be rephrased to have that model structure, but it's a bit confusing as we present a different model structure by keeping duration and state separate.]
+Weak form of temporal dependence: Markov assumption -> HMMs.
+Geometric duration distribution HMMs.
+EDHMMs fix this.
+
+==5. BNP==
+Idea: Bayesian treatment of statistical models with infinitely many parameters.
+Allows model complexity to grow when we accumulate more data.
+These models often arise as infinite dimensional limit of finite dimensional models.
+Example: (multivariate) Gaussian distribution (dist on finite dimensional vectors) -> Gaussian process (dist on infinite dimensional vectors or functions).
+Example: Dirichlet distribution  (dist on finite probability dists) -> Dirichlet process (dist on infinite probability dists).
+(Here, probability dist.: semi-positive vector that sums to 1.)
+Can use it for non-parametric clustering and HDP-HMM
+Results in state-reuse in HDP-HMM
+
+figure: equations for non-parametric clustering and HDP-HMM
+
+==6. Our models==
+Note
+- difference between HMM and EDHMM.
+- non-parametrically treat state change and durations
+- more lightweight extensions of HMM: sticky and stateful
+figure: models
+
+
+
+==7. Synthetic Experiments==
+Work with non-geometric duration SSM data.
+See that an (HDP)HMM is outperformed by (HDP)EDHMM (or IDHMM)
+Also tried other models: sticky, stateful (easy bc of probprog).
+Note that part of why hamming distance is large for some models is because they guess wrong state cardinality.
+
+==8. Lions experiments==
+Obtain this labeling: figure lions main
+
+==9. Detailed, a hunt==
+Zoom in on domain where ground truth is too coarse: figure hunt.
+Obtain more detailed labeling, which turns out to make sense if we listen in detail to ground truth.
+
+==10. Conclusion==
